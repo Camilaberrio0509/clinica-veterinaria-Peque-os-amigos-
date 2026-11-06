@@ -2,8 +2,6 @@
 
 > **«Cuidando la salud y el bienestar de perros y gatos»**  
 > **Proyecto Académico de Medicina Veterinaria | Convocatoria 2026**  
-> **Tesista / Ponente:** MV Simón Quintero  
-> **Contacto:** albertyquin43@gmail.com &bull; **Teléfono:** 0424-3685596  
 > **Pie de Página Oficial:** «VetSalud | Proyecto Académico de Medicina Veterinaria | 2026»
 
 ---
