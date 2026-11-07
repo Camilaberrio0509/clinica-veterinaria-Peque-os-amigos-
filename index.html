@@ -1,1569 +1,635 @@
  
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Clínica Veterinaria Pequeños Amigos - Plataforma académica de medicina veterinaria preventiva para perros y gatos: cuidados, enfermedades, vacunación y bienestar animal. Proyecto de grado 2026.">
-  <meta name="keywords" content="medicina veterinaria de perros y gatos, salud canina, salud felina, parvovirus canino, panleucopenia felina, vacunacion perros gatos, bienestar animal">
-  <meta name="author" content="Elianny Berrio y Nicole Bolívar">
-  <title>Clínica Veterinaria Pequeños Amigos | Medicina Veterinaria Preventiva</title>
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-  <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-  <!-- Top Announcement Bar (Academic Defense Status) -->
-  <div class="top-bar">
-    <div class="container top-bar-content">
-      <div class="academic-badge">
-        <span class="pulse-dot"></span>
-        <strong>Proyecto de Grado 2026</strong> &bull; Facultad de Ciencias Veterinarias &bull; Ponentes: Elianny Berrio &amp; Nicole Bolívar
-      </div>
-      <div class="emergency-notice">
-        <span class="phone-icon">&#9742;</span> Línea de Orientación Veterinaria: <strong>0424-4419871</strong>
-      </div>
-    </div>
-  </div>
-
-  <!-- Header & Navigation -->
-  <header class="site-header" id="header">
-    <div class="container nav-container">
-      <!-- Brand Logo -->
-      <a href="#inicio" class="brand-logo" aria-label="Clínica Veterinaria Pequeños Amigos Inicio">
-        <div class="logo-icon-wrapper">
-          <!-- Custom SVG Dog, Cat & Stethoscope Logo -->
-          <svg class="logo-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="50" cy="50" r="47" stroke="#184e38" stroke-width="3" fill="#ffffff"/>
-            <!-- Stethoscope tube encircling -->
-            <path d="M 22 58 C 14 48, 20 30, 36 24 C 54 17, 74 22, 82 38 C 88 50, 82 64, 72 72" stroke="#0033cc" stroke-width="3.2" stroke-linecap="round"/>
-            <circle cx="22" cy="58" r="4" fill="#0033cc"/>
-            <!-- Stethoscope bell -->
-            <circle cx="72" cy="72" r="5" fill="#184e38" stroke="#0033cc" stroke-width="2"/>
-            <!-- Dog head silhouette -->
-            <path d="M 27 42 C 27 32, 34 27, 41 29 C 44 27, 47 28, 48 31 C 53 33, 55 38, 53 44 C 51 50, 45 53, 39 52 C 33 51, 27 48, 27 42 Z" fill="#8b5a2b"/>
-            <path d="M 25 35 C 20 38, 20 48, 25 53 C 28 51, 28 45, 28 41 Z" fill="#6b3f1d"/>
-            <circle cx="37" cy="39" r="1.7" fill="#ffffff"/>
-            <circle cx="46" cy="39" r="1.7" fill="#ffffff"/>
-            <path d="M 39 46 Q 42 48.5 45 46" stroke="#3d2613" stroke-width="1.6" stroke-linecap="round"/>
-            <!-- Cat head silhouette -->
-            <path d="M 58 40 L 59.5 29 L 66 35 C 69 34, 72 34, 75 35 L 81 29 L 82.5 40 C 86 44, 85 50, 81 53 C 76 56, 64 56, 59 53 C 55 50, 55 44, 58 40 Z" fill="#6b7280"/>
-            <path d="M 61 34 L 62 30.5 L 64.5 34 Z" fill="#f9a8d4"/>
-            <path d="M 79 34 L 80.5 30.5 L 77 34 Z" fill="#f9a8d4"/>
-            <circle cx="66" cy="43" r="1.7" fill="#ffffff"/>
-            <circle cx="75" cy="43" r="1.7" fill="#ffffff"/>
-            <path d="M 69 48 Q 70.5 49.5 72 48" stroke="#374151" stroke-width="1.4" stroke-linecap="round"/>
-            <path d="M 60 46 L 55 45 M 60 48 L 55 49 M 81 46 L 86 45 M 81 48 L 86 49" stroke="#374151" stroke-width="1" stroke-linecap="round"/>
-            <!-- Veterinary cross -->
-            <rect x="43" y="64" width="10" height="3" rx="1.5" fill="#008b8b"/>
-            <rect x="46.5" y="60.5" width="3" height="10" rx="1.5" fill="#008b8b"/>
-          </svg>
-        </div>
-        <div class="brand-text">
-          <span class="brand-name">PEQUEÑOS AMIGOS</span>
-          <span class="brand-tagline">Clínica Veterinaria</span>
-        </div>
-      </a>
-
-      <!-- Navigation Links -->
-      <nav class="nav-menu" id="navMenu">
-        <ul class="nav-list">
-          <li><a href="#inicio" class="nav-link active">Inicio</a></li>
-          <li><a href="#sobre-nosotros" class="nav-link">Sobre Nosotros</a></li>
-          <li><a href="#cuidados-basicos" class="nav-link">Cuidados Básicos</a></li>
-          <li><a href="#enfermedades" class="nav-link">Enfermedades</a></li>
-          <li><a href="#vacunacion-desparasitacion" class="nav-link">Inmunización</a></li>
-          <li><a href="#anatomia" class="nav-link">Anatomía 360°</a></li>
-          <li><a href="#triage-calculadora" class="nav-link special-link">Triage Clínico</a></li>
-          <li><a href="#consejos" class="nav-link">Consejos</a></li>
-          <li><a href="#evaluacion" class="nav-link quiz-btn-nav">Evaluación</a></li>
-          <li><a href="#contacto" class="nav-link">Contacto</a></li>
-        </ul>
-      </nav>
-
-      <!-- Mobile Menu Toggle Button -->
-      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú de navegación">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </button>
-    </div>
-  </header>
-
-  <!-- MAIN CONTENT -->
-  <main id="main-content">
-
-    <!-- HERO SECTION -->
-    <section class="hero-section" id="inicio">
-      <div class="hero-overlay"></div>
-      <div class="container hero-container">
-        <div class="hero-content">
-          <div class="hero-badge">
-            <span class="shield-icon">&#128737;</span> Plataforma Universitaria para la Defensa Académica 2026
-          </div>
-          <h1 class="hero-title">PEQUEÑOS AMIGOS</h1>
-          <p class="hero-subtitle">«Cuidando la salud y el bienestar de perros y gatos»</p>
-          <p class="hero-description">
-            Portal científico-educativo enfocado en la prevención clínica, la detección temprana de patologías y el bienestar integral de perros y gatos. Diseñado con rigor académico para estudiantes, médicos veterinarios y tutores responsables.
-          </p>
-
-          <div class="hero-actions">
-            <a href="#cuidados-basicos" class="btn btn-primary">
-              <span>Explorar Cuidados</span>
-              <span class="btn-arrow">&rarr;</span>
-            </a>
-            <a href="#enfermedades" class="btn btn-secondary">
-              <span>Guía de Enfermedades</span>
-              <span class="btn-icon">&#129658;</span>
-            </a>
-            <a href="#evaluacion" class="btn btn-accent">
-              <span>Evaluación Interactiva (Quiz)</span>
-              <span class="btn-badge">10 Preguntas</span>
-            </a>
-          </div>
-
-          <!-- Quick Vital Signs Summary Bar -->
-          <div class="quick-vitals-strip">
-            <div class="vital-item">
-              <span class="vital-label">Frecuencia Cardíaca &bull; Perro</span>
-              <strong class="vital-val">60 - 160 <small>lpm</small></strong>
-              <span class="vital-status normal">Reposo (varía por talla)</span>
-            </div>
-            <div class="vital-item">
-              <span class="vital-label">Frecuencia Cardíaca &bull; Gato</span>
-              <strong class="vital-val">140 - 220 <small>lpm</small></strong>
-              <span class="vital-status normal">Reposo Fisiológico</span>
-            </div>
-            <div class="vital-item">
-              <span class="vital-label">Frecuencia Respiratoria</span>
-              <strong class="vital-val">Perro 10-30 &bull; Gato 20-30 <small>rpm</small></strong>
-              <span class="vital-status normal">Eupnea en reposo</span>
-            </div>
-            <div class="vital-item">
-              <span class="vital-label">Temperatura Rectal</span>
-              <strong class="vital-val">Perro 37.5-39.2 &bull; Gato 38.1-39.2 <small>°C</small></strong>
-              <span class="vital-status normal">Normotermia</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="hero-visual-card">
-          <div class="hero-card-inner">
-            <img src="images/WhatsApp Image 2026-11-06 at 12.42.09 AM.jpeg" alt="Elianny Berrio y Nicole Bolívar examinando a un paciente canino" class="hero-img">            
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SOBRE NOSOTROS -->
-    <section class="about-section section-padding" id="sobre-nosotros">
-      <div class="container">
-        <div class="section-header text-center">
-          <span class="section-tag">Fundamentación Universitaria</span>
-          <h2 class="section-title">Sobre Clínica Veterinaria Pequeños Amigos</h2>
-          <p class="section-subtitle">
-            Proyecto académico universitario desarrollado para la defensa de grado en Medicina Veterinaria, centrado en el fortalecimiento de la medicina preventiva y el bienestar integral de perros y gatos.
-          </p>
-        </div>
-
-        <div class="about-grid">
-          <div class="about-card main-academic-card">
-            <div class="card-pill">Marco Institucional</div>
-            <h3>Naturaleza del Proyecto</h3>
-            <p>
-              <strong>Clínica Veterinaria Pequeños Amigos</strong> surge como una herramienta pedagógica y de divulgación técnica orientada a cerrar la brecha entre la semiología veterinaria y el manejo diario realizado por tutores, criadores y cuidadores de perros y gatos.
-            </p>
-            <p>
-              El pilar rector es la <em>Medicina Preventiva Proactiva</em>: prevenir el sufrimiento animal, reducir la incidencia de enfermedades infecciosas y metabólicas y promover la tenencia responsable mediante el conocimiento científico riguroso.
-            </p>
-
-            <div class="author-highlight-box">
-              <div class="author-avatar">
-                <svg viewBox="0 0 80 80" width="60" height="60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="40" cy="40" r="38" fill="#d6e4f0" stroke="#0033cc" stroke-width="2"/>
-                  <circle cx="40" cy="30" r="14" fill="#184e38"/>
-                  <path d="M 18 64 C 18 50, 28 46, 40 46 C 52 46, 62 50, 62 64 Z" fill="#184e38"/>
-                  <circle cx="40" cy="50" r="4" fill="#c29b38"/>
-                </svg>
-              </div>
-              <div class="author-details">
-                <h4>Elianny Berrio &amp; Nicole Bolívar</h4>
-                <p class="author-role">Investigadoras &amp; Ponentes | Medicina Veterinaria</p>
-                <p class="author-contact-small">Contacto: eliannyberrío14@gmail.com / nicoleclb7@gmail.com &bull; Tlf: 0424-4419871 / 0412-4198446</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="about-card mission-card">
-            <div class="icon-bubble">&#127919;</div>
-            <h3>Misión</h3>
-            <p>
-              Promover la salud y el bienestar de perros y gatos mediante una plataforma educativa interactiva basada en evidencia científica, que empodere a los tutores en la detección temprana de signos clínicos de alarma y la adopción de protocolos preventivos reglados.
-            </p>
-          </div>
-
-          <div class="about-card vision-card">
-            <div class="icon-bubble">&#128065;</div>
-            <h3>Visión</h3>
-            <p>
-              Consolidarse como el referente digital académico en medicina veterinaria preventiva de perros y gatos para jurados evaluadores, estudiantes de pregrado y centros de atención veterinaria, impulsando una cultura donde el bienestar animal y la consulta veterinaria oportuna sean la norma inquebrantable.
-            </p>
-          </div>
-
-          <div class="about-card objective-card">
-            <div class="icon-bubble">&#128202;</div>
-            <h3>Objetivo General</h3>
-            <p>
-              Desarrollar una plataforma web educativa integral e interactiva que permita a estudiantes de veterinaria, criadores y público interesado profundizar en los cuidados básicos, la prevención de las principales enfermedades de perros y gatos y los principios universales de bienestar animal.
-            </p>
-          </div>
-        </div>
-
-        <!-- Los 5 Pilares del Bienestar Animal en Perros y Gatos -->
-        <div class="welfare-banner">
-          <div class="welfare-header">
-            <h3>Los 5 Pilares del Bienestar Animal en Perros y Gatos (Cinco Libertades y Cinco Dominios)</h3>
-            <p>Marco de evaluación internacional para la salud física y emocional de perros y gatos:</p>
-          </div>
-          <div class="welfare-grid">
-            <div class="welfare-pillar">
-              <span class="welfare-num">1</span>
-              <h4>Libre de Hambre y Sed</h4>
-              <p>Acceso permanente a agua limpia y a una dieta completa y equilibrada adaptada a la especie, la edad y la condición corporal.</p>
-            </div>
-            <div class="welfare-pillar">
-              <span class="welfare-num">2</span>
-              <h4>Libre de Incomodidad</h4>
-              <p>Zonas de descanso limpias y secas, temperatura adecuada, refugio seguro y, en gatos, arenero limpio y espacios verticales.</p>
-            </div>
-            <div class="welfare-pillar">
-              <span class="welfare-num">3</span>
-              <h4>Libre de Dolor, Lesión y Enfermedad</h4>
-              <p>Vacunación, control parasitario, salud dental, cuidado de uñas y garras, y diagnóstico veterinario oportuno.</p>
-            </div>
-            <div class="welfare-pillar">
-              <span class="welfare-num">4</span>
-              <h4>Libertad de Expresión Etológica</h4>
-              <p>Paseos, juego, olfateo e interacción social; en gatos, scratching, juego de presa y acceso a escondites seguros.</p>
-            </div>
-            <div class="welfare-pillar">
-              <span class="welfare-num">5</span>
-              <h4>Libre de Miedo y Estrés</h4>
-              <p>Manejo suave y respetuoso (Fear Free / Low Stress Handling), socialización temprana, rutinas predecibles y ambiente enriquecido.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CUIDADOS BÁSICOS DE PERROS Y GATOS -->
-    <section class="care-section section-padding bg-light" id="cuidados-basicos">
-      <div class="container">
-        <div class="section-header text-center">
-          <span class="section-tag">Medicina Preventiva y Bienestar</span>
-          <h2 class="section-title">Cuidados Básicos de Perros y Gatos</h2>
-          <p class="section-subtitle">
-            Seis pilares fundamentales de manejo diario recomendados por la práctica veterinaria moderna para preservar la salud y la calidad de vida de perros y gatos.
-          </p>
-        </div>
-
-        <div class="care-grid">
-          <!-- Card 1: Alimentación -->
-          <article class="care-card">
-            <div class="care-card-img-box">
-              <img src="https://images.unsplash.com/photo-1591946559594-8c6d3b7391eb?auto=format&fit=crop&w=700&q=80" alt="Perro sentado junto a su comedero durante la alimentación" class="care-img">
-              <span class="care-category">Nutrición &amp; Digestión</span>
-            </div>
-            <div class="care-card-body">
-              <div class="care-icon-header">
-                <span class="icon-round">&#127806;</span>
-                <h3>1. Alimentación y Nutrición de Perros y Gatos</h3>
-              </div>
-              <p class="care-intro">
-                Perros y gatos tienen necesidades nutricionales distintas: el gato es un carnívoro obligado y requiere nutrientes como taurina, arginina, vitamina A preformada y ácido araquidónico; el perro es oportunista y puede cubrir parte de sus necesidades con una dieta equilibrada.
-              </p>
-              <ul class="care-checklist">
-                <li><strong>Dieta completa y equilibrada:</strong> Usar alimentos formulados para la especie y etapa de vida; el alimento casero debe formularse con asesoría veterinaria para evitar deficiencias.</li>
-                <li><strong>Alimentos a evitar:</strong> Chocolate, uvas y pasas, cebolla, ajo, alcohol y xilitol son tóxicos para los perros; en gatos, evitar también la leche de vaca y el exceso de pescado crudo.</li>
-                <li><strong>Raciones medidas:</strong> Ajustar según condición corporal (escala 1-9, ideal 4-5/9), edad y actividad; la obesidad predispone a diabetes, artrosis y otras enfermedades.</li>
-              </ul>
-              <button class="btn-text-expand" onclick="openCareModal('nutricion')">Ver protocolo nutricional veterinario &rarr;</button>
-            </div>
-          </article>
-
-          <!-- Card 2: Hidratación -->
-          <article class="care-card">
-            <div class="care-card-img-box">
-              <img src="https://images.unsplash.com/photo-1571131116858-2295ade82a72?auto=format&fit=crop&w=700&q=80" alt="Gato bebiendo agua de un recipiente limpio" class="care-img">
-              <span class="care-category">Hidroelectrolitos</span>
-            </div>
-            <div class="care-card-body">
-              <div class="care-icon-header">
-                <span class="icon-round">&#128167;</span>
-                <h3>2. Hidratación Adecuada</h3>
-              </div>
-              <p class="care-intro">
-                El agua es esencial para la función renal, la termorregulación y la digestión. Los gatos suelen tener baja sed y pueden beneficiarse de alimento húmedo y fuentes de agua.
-              </p>
-              <ul class="care-checklist">
-                <li><strong>Consumo orientativo:</strong> 40 a 60 ml/kg/día en perros y gatos; aumenta con calor, ejercicio, lactancia o enfermedad.</li>
-                <li><strong>Estrategias para gatos:</strong> Alimento húmedo, fuentes de agua corriente y varios puntos de agua lejos del arenero y del comedero.</li>
-                <li><strong>Signos de deshidratación:</strong> Encías secas, piel que tarda en recuperar su posición, ojos hundidos, letargo o disminución de la orina; requieren evaluación veterinaria.</li>
-              </ul>
-              <button class="btn-text-expand" onclick="openCareModal('hidratacion')">Ver evaluación de hidratación &rarr;</button>
-            </div>
-          </article>
-
-          <!-- Card 3: Higiene y Aseo -->
-          <article class="care-card">
-            <div class="care-card-img-box">
-              <img src="https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?auto=format&fit=crop&w=700&q=80" alt="Persona acariciando y cepillando suavemente a un gato" class="care-img">
-              <span class="care-category">Dermatología &amp; Aseo</span>
-            </div>
-            <div class="care-card-body">
-              <div class="care-icon-header">
-                <span class="icon-round">&#10024;</span>
-                <h3>3. Higiene y Aseo</h3>
-              </div>
-              <p class="care-intro">
-                El cepillado y la revisión periódica de la piel permiten detectar parásitos, heridas, masas o signos de dolor; en gatos también reduce la formación de bolas de pelo.
-              </p>
-              <ul class="care-checklist">
-                <li><strong>Cepillado según el manto:</strong> Frecuencia semanal o diaria en razas de pelo largo; usar cepillos adecuados y evitar tirones.</li>
-                <li><strong>Baños con champú veterinario:</strong> Solo cuando sea necesario (cada 4-8 semanas o según indicación); nunca usar champú humano ni productos con permetrina en gatos.</li>
-                <li><strong>Revisión de orejas, ojos y uñas:</strong> Limpiar solo la parte visible del pabellón auricular; no introducir hisopos profundos en el oído; revisar uñas cada 2-4 semanas.</li>
-              </ul>
-              <button class="btn-text-expand" onclick="openCareModal('higiene')">Ver protocolo de aseo &rarr;</button>
-            </div>
-          </article>
-
-          <!-- Card 4: Uñas, Garras y Almohadillas -->
-          <article class="care-card">
-            <div class="care-card-img-box">
-              <img src="https://images.unsplash.com/photo-1547810015-6841579aebd8?auto=format&fit=crop&w=700&q=80" alt="Primer plano de las almohadillas de un perro" class="care-img">
-              <span class="care-category">Podología &amp; Cuidado de Garras</span>
-            </div>
-            <div class="care-card-body">
-              <div class="care-icon-header">
-                <span class="icon-round">&#9878;</span>
-                <h3>4. Uñas, Garras y Almohadillas</h3>
-              </div>
-              <p class="care-intro">
-                Las uñas largas alteran la postura y pueden clavarse en la almohadilla; las almohadillas pueden quemarse, cortarse o infectarse.
-              </p>
-              <ul class="care-checklist">
-                <li><strong>Corte seguro:</strong> Usar cortaúñas adecuados y cortar solo la punta; evitar la zona rosada (quick) que contiene vasos y nervios; tener polvo hemostático disponible.</li>
-                <li><strong>Frecuencia:</strong> Perros cada 3-4 semanas; gatos cada 2-4 semanas o cuando las uñas se enganchen; los gatos necesitan rascadores para el desgaste natural.</li>
-                <li><strong>Protección de almohadillas:</strong> Evitar asfalto caliente, hielo y sales; revisar después de paseos y acudir al veterinario ante heridas, cojera o inflamación.</li>
-              </ul>
-              <button class="btn-text-expand" onclick="openCareModal('garras')">Ver guía de corte y cuidado podal &rarr;</button>
-            </div>
-          </article>
-
-          <!-- Card 5: Actividad Física y Descanso -->
-          <article class="care-card">
-            <div class="care-card-img-box">
-              <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=700&q=80" alt="Perro adulto disfrutando de actividad física al aire libre" class="care-img">
-              <span class="care-category">Ejercicio &amp; Bienestar</span>
-            </div>
-            <div class="care-card-body">
-              <div class="care-icon-header">
-                <span class="icon-round">&#127939;</span>
-                <h3>5. Actividad Física, Juego y Descanso</h3>
-              </div>
-              <p class="care-intro">
-                El ejercicio adecuado previene la obesidad, fortalece el sistema musculoesquelético y reduce el estrés; en gatos, el juego simula la caza y es clave para el bienestar mental.
-              </p>
-              <ul class="care-checklist">
-                <li><strong>Perros:</strong> 30-60 minutos diarios de actividad adaptada a raza, edad y salud; cachorros y razas braquicéfalas requieren sesiones más cortas y controladas.</li>
-                <li><strong>Gatos:</strong> 2-3 sesiones de juego de 10-15 minutos al día con juguetes tipo caña o pelota; ofrecer espacios verticales y escondites.</li>
-                <li><strong>Descanso y seguridad:</strong> Evitar ejercicio intenso con calor; proporcionar camas y zonas tranquilas; respetar el sueño y la necesidad de retirarse.</li>
-              </ul>
-              <button class="btn-text-expand" onclick="openCareModal('actividad')">Ver pautas de ejercicio y enriquecimiento &rarr;</button>
-            </div>
-          </article>
-
-          <!-- Card 6: Revisiones Veterinarias -->
-          <article class="care-card">
-            <div class="care-card-img-box">
-              <img src="https://images.unsplash.com/photo-1630438994394-3deff7a591bf?auto=format&fit=crop&w=700&q=80" alt="Perro en una mesa de exploración veterinaria" class="care-img">
-              <span class="care-category">Clínica &amp; Profilaxis</span>
-            </div>
-            <div class="care-card-body">
-              <div class="care-icon-header">
-                <span class="icon-round">&#129658;</span>
-                <h3>6. Revisiones Veterinarias Periódicas</h3>
-              </div>
-              <p class="care-intro">
-                La consulta preventiva permite detectar enfermedades antes de que causen daño y ajustar vacunas, desparasitación y alimentación.
-              </p>
-              <ul class="care-checklist">
-                <li><strong>Examen anual:</strong> Adultos sanos al menos una vez al año; cachorros, gatitos y animales senior o con enfermedades crónicas con mayor frecuencia.</li>
-                <li><strong>Salud dental:</strong> Revisión anual y cepillado dental con pasta veterinaria; la enfermedad periodontal es muy frecuente en perros y gatos adultos.</li>
-                <li><strong>Prevención adaptada:</strong> Vacunas, control de parásitos internos y externos, microchip, control de peso y analítica según criterio veterinario.</li>
-              </ul>
-              <button class="btn-text-expand" onclick="openCareModal('veterinaria')">Ver protocolo de examen preventivo &rarr;</button>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ENFERMEDADES FRECUENTES EN PERROS Y GATOS -->
-    <section class="diseases-section section-padding" id="enfermedades">
-      <div class="container">
-        <div class="section-header text-center">
-          <span class="section-tag alert-tag">Patología y Urgencias en Perros y Gatos</span>
-          <h2 class="section-title">Enfermedades Frecuentes en Perros y Gatos</h2>
-          <p class="section-subtitle">
-            Guía nosológica universitaria de las afecciones de mayor impacto en la clínica veterinaria de pequeños animales. Reconozca signos de alarma y comprenda la necesidad de intervención profesional.
-          </p>
-
-          <!-- Emergency Alert Notice Banner -->
-          <div class="alert-box-urgent">
-            <div class="alert-icon">&#9888;</div>
-            <div class="alert-text">
-              <strong>ADVERTENCIA MÉDICO-VETERINARIA IMPORTANTE:</strong>
-              Esta sección es estrictamente educativa y de triaje preventivo. <em>No se deben suministrar fármacos, antiinflamatorios (AINEs), paracetamol, ibuprofeno, sedantes ni tratamientos invasivos</em> sin la valoración presencial de un Médico Veterinario colegiado. La automedicación puede enmascarar signos quirúrgicos vitales, causar intoxicaciones y poner en riesgo la vida del animal.
-            </div>
-          </div>
-        </div>
-
-        <!-- Filter tabs for diseases -->
-        <div class="disease-filter-bar">
-          <button class="filter-btn active" data-filter="all">Todas las Patologías (6)</button>
-          <button class="filter-btn" data-filter="emergencia">Emergencias Críticas</button>
-          <button class="filter-btn" data-filter="infecciosa">Infecciosas Virales</button>
-          <button class="filter-btn" data-filter="urologica">Urológicas</button>
-          <button class="filter-btn" data-filter="metabolica">Metabólicas</button>
-        </div>
-
-        <div class="diseases-grid">
-
-          <!-- Enfermedad 1: Parvovirus Canino -->
-          <article class="disease-card" data-category="emergencia infecciosa">
-            <div class="disease-badge-row">
-              <span class="triage-badge triage-red">&#9888; Código Rojo &bull; Urgencia Infecciosa</span>
-              <span class="disease-type">Gastrointestinal / Viral</span>
-            </div>
-            <div class="disease-header">
-              <div class="disease-icon-box">&#128680;</div>
-              <div>
-                <h3 class="disease-title">Parvovirus Canino</h3>
-                <span class="disease-scientific">Virus CPV-2 &bull; Panleucopenia viral canina</span>
-              </div>
-            </div>
-            <div class="disease-body">
-              <div class="disease-field">
-                <h4><span class="field-icon">&#128218;</span> Descripción Etiopatogénica:</h4>
-                <p>
-                  Enfermedad viral aguda y altamente contagiosa causada por un parvovirus canino (CPV-2), un virus sin envoltura muy resistente en el ambiente. Se transmite por vía fecal-oral y afecta principalmente a cachorros no vacunados o con vacunación incompleta; destruye las células del intestino y de la médula ósea.
-                </p>
-              </div>
-
-              <div class="disease-field signs-field">
-                <h4><span class="field-icon">&#128065;</span> Signos Clínicos Frecuentes:</h4>
-                <div class="tags-group">
-                  <span class="sign-tag">Diarrea hemorrágica fétida</span>
-                  <span class="sign-tag">Vómitos persistentes</span>
-                  <span class="sign-tag">Anorexia y letargo</span>
-                  <span class="sign-tag">Fiebre o hipotermia</span>
-                  <span class="sign-tag">Deshidratación rápida</span>
-                  <span class="sign-tag">Dolor abdominal</span>
-                  <span class="sign-tag">Leucopenia</span>
-                </div>
-              </div>
-
-              <div class="disease-field">
-                <h4><span class="field-icon">&#128737;</span> Medidas Preventivas Veterinarias:</h4>
-                <ul class="disease-list">
-                  <li><strong>Vacunación core completa:</strong> Serie de cachorro desde las 6-8 semanas hasta las 16 semanas, con refuerzo anual o trienal según el protocolo veterinario.</li>
-                  <li>Evitar parques, ferias y zonas públicas hasta completar el esquema vacunal.</li>
-                  <li>Desinfectar superficies y utensilios con hipoclorito de sodio diluido 1:32 durante al menos 10 minutos; el virus es resistente a muchos desinfectantes comunes.</li>
-                  <li>Aislar a los animales enfermos y lavarse las manos antes y después del contacto.</li>
-                </ul>
-              </div>
-
-              <div class="disease-field emergency-action">
-                <h4><span class="field-icon">&#129658;</span> Conducta Inmediata &amp; Atención Veterinaria:</h4>
-                <p>
-                  <strong>ATENCIÓN INMEDIATA:</strong> No existe un tratamiento antiviral específico. El manejo es hospitalario con fluidoterapia, antieméticos y soporte nutricional. No forzar la comida ni administrar medicamentos humanos. Aislar al cachorro y contactar al veterinario de urgencia.
-                </p>
-              </div>
-            </div>
-          </article>
-
-          <!-- Enfermedad 2: Obstrucción Uretral Felina -->
-          <article class="disease-card" data-category="emergencia urologica">
-            <div class="disease-badge-row">
-              <span class="triage-badge triage-red">&#9888; Código Rojo &bull; Emergencia Urológica</span>
-              <span class="disease-type">Urinario</span>
-            </div>
-            <div class="disease-header">
-              <div class="disease-icon-box">&#128167;</div>
-              <div>
-                <h3 class="disease-title">Obstrucción Uretral Felina</h3>
-                <span class="disease-scientific">Síndrome urológico felino (FLUTD) &bull; Tapón uretral</span>
-              </div>
-            </div>
-            <div class="disease-body">
-              <div class="disease-field">
-                <h4><span class="field-icon">&#128218;</span> Descripción Etiopatogénica:</h4>
-                <p>
-                  Urgencia potencialmente mortal, más frecuente en gatos machos por su uretra estrecha. Un tapón de matriz cristalina, cálculos, espasmos o estenosis impiden la salida de orina y provocan retención, hiperpotasemia y daño renal agudo.
-                </p>
-              </div>
-
-              <div class="disease-field signs-field">
-                <h4><span class="field-icon">&#128065;</span> Signos Clínicos Frecuentes:</h4>
-                <div class="tags-group">
-                  <span class="sign-tag">Entra y sale del arenero sin orinar</span>
-                  <span class="sign-tag">Esfuerzo y vocalización al orinar</span>
-                  <span class="sign-tag">Orina escasa o ausente</span>
-                  <span class="sign-tag">Lamido genital excesivo</span>
-                  <span class="sign-tag">Vómitos, letargo y debilidad</span>
-                  <span class="sign-tag">Abdomen doloroso</span>
-                  <span class="sign-tag">Arritmias por hiperpotasemia</span>
-                </div>
-              </div>
-
-              <div class="disease-field">
-                <h4><span class="field-icon">&#128737;</span> Medidas Preventivas Veterinarias:</h4>
-                <ul class="disease-list">
-                  <li>Aumentar el consumo de agua con alimento húmedo, fuentes y varios puntos de agua limpia.</li>
-                  <li>Reducir el estrés y mantener los areneros limpios y en lugares tranquilos.</li>
-                  <li>Control de peso y dieta según indicación veterinaria; evitar cambios bruscos de alimento.</li>
-                  <li>Revisión veterinaria ante cualquier cambio en la frecuencia o el volumen de orina.</li>
-                </ul>
-              </div>
-
-              <div class="disease-field emergency-action">
-                <h4><span class="field-icon">&#129658;</span> Conducta Inmediata &amp; Atención Veterinaria:</h4>
-                <p>
-                  <strong>EMERGENCIA:</strong> No esperar y no presionar la vejiga. Traslado inmediato para desobstrucción, fluidoterapia y control de electrolitos; la retención prolongada puede causar la muerte en 24-72 horas por hiperpotasemia y fallo renal.
-                </p>
-              </div>
-            </div>
-          </article>
-
-          <!-- Enfermedad 3: Moquillo Canino -->
-          <article class="disease-card" data-category="infecciosa">
-            <div class="disease-badge-row">
-              <span class="triage-badge triage-orange">&#9888; Código Naranja &bull; Enfermedad Viral Sistémica</span>
-              <span class="disease-type">Respiratorio / Neurológico</span>
-            </div>
-            <div class="disease-header">
-              <div class="disease-icon-box">&#129440;</div>
-              <div>
-                <h3 class="disease-title">Moquillo Canino</h3>
-                <span class="disease-scientific">Virus del moquillo canino (CDV) &bull; Morbillivirus</span>
-              </div>
-            </div>
-            <div class="disease-body">
-              <div class="disease-field">
-                <h4><span class="field-icon">&#128218;</span> Descripción Etiopatogénica:</h4>
-                <p>
-                  Enfermedad viral sistémica altamente contagiosa que afecta el aparato respiratorio, digestivo, la piel y el sistema nervioso. Se transmite por aerosoles y contacto con secreciones; los perros no vacunados y los cachorros son los más susceptibles. Puede ser fatal.
-                </p>
-              </div>
-
-              <div class="disease-field signs-field">
-                <h4><span class="field-icon">&#128065;</span> Signos Clínicos Frecuentes:</h4>
-                <div class="tags-group">
-                  <span class="sign-tag">Fiebre y decaimiento</span>
-                  <span class="sign-tag">Secreción nasal y ocular</span>
-                  <span class="sign-tag">Tos y dificultad respiratoria</span>
-                  <span class="sign-tag">Vómitos y diarrea</span>
-                  <span class="sign-tag">Hiperqueratosis de almohadillas y nariz</span>
-                  <span class="sign-tag">Temblores, convulsiones y ataxia</span>
-                  <span class="sign-tag">Cambios de comportamiento</span>
-                </div>
-              </div>
-
-              <div class="disease-field">
-                <h4><span class="field-icon">&#128737;</span> Medidas Preventivas Veterinarias:</h4>
-                <ul class="disease-list">
-                  <li><strong>Vacunación core (DHPP):</strong> Serie completa en cachorros y refuerzos según el protocolo veterinario.</li>
-                  <li>Evitar el contacto con animales silvestres y con perros enfermos o no vacunados.</li>
-                  <li>Cuarentena de nuevos animales antes de integrarlos al hogar.</li>
-                  <li>No existe tratamiento específico; la prevención vacunal es la herramienta más eficaz.</li>
-                </ul>
-              </div>
-
-              <div class="disease-field emergency-action">
-                <h4><span class="field-icon">&#129658;</span> Conducta Inmediata &amp; Atención Veterinaria:</h4>
-                <p>
-                  Aislamiento inmediato y evaluación veterinaria urgente. El tratamiento es de soporte (fluidos, antibióticos para infecciones secundarias y control neurológico); el pronóstico es reservado y algunos supervivientes quedan con secuelas neurológicas.
-                </p>
-              </div>
-            </div>
-          </article>
-
-          <!-- Enfermedad 4: Leucemia Felina -->
-          <article class="disease-card" data-category="infecciosa">
-            <div class="disease-badge-row">
-              <span class="triage-badge triage-orange">&#9888; Código Naranja &bull; Retrovirus Felino</span>
-              <span class="disease-type">Infecciosa Viral</span>
-            </div>
-            <div class="disease-header">
-              <div class="disease-icon-box">&#128300;</div>
-              <div>
-                <h3 class="disease-title">Leucemia Felina (FeLV)</h3>
-                <span class="disease-scientific">Virus de la leucemia felina &bull; Gammaretrovirus</span>
-              </div>
-            </div>
-            <div class="disease-body">
-              <div class="disease-field">
-                <h4><span class="field-icon">&#128218;</span> Descripción Etiopatogénica:</h4>
-                <p>
-                  Infección retroviral que puede causar anemia, inmunosupresión, linfoma y otros tumores. Se transmite por saliva (acicalamiento, comederos compartidos, mordeduras), sangre y de madre a cría; no se transmite a los humanos.
-                </p>
-              </div>
-
-              <div class="disease-field signs-field">
-                <h4><span class="field-icon">&#128065;</span> Signos Clínicos Frecuentes:</h4>
-                <div class="tags-group">
-                  <span class="sign-tag">Pérdida de peso y apetito</span>
-                  <span class="sign-tag">Fiebre recurrente</span>
-                  <span class="sign-tag">Anemia y mucosas pálidas</span>
-                  <span class="sign-tag">Infecciones recurrentes</span>
-                  <span class="sign-tag">Gingivitis y estomatitis</span>
-                  <span class="sign-tag">Aumento de ganglios linfáticos</span>
-                  <span class="sign-tag">Letargo</span>
-                </div>
-              </div>
-
-              <div class="disease-field">
-                <h4><span class="field-icon">&#128737;</span> Medidas Preventivas Veterinarias:</h4>
-                <ul class="disease-list">
-                  <li>Realizar pruebas de FeLV antes de la vacunación y del ingreso de un gato nuevo al hogar.</li>
-                  <li>Vacuna FeLV para gatitos y gatos con riesgo de exposición (salida al exterior, convivencia con positivos).</li>
-                  <li>Mantener a los gatos positivos en interior y separados de los negativos; no compartir comederos ni bebederos.</li>
-                  <li>Control veterinario periódico, buena nutrición y reducción del estrés.</li>
-                </ul>
-              </div>
-
-              <div class="disease-field emergency-action">
-                <h4><span class="field-icon">&#129658;</span> Conducta Inmediata &amp; Atención Veterinaria:</h4>
-                <p>
-                  No tiene cura; el manejo es de soporte y control de complicaciones. Aislar de gatos negativos, evitar el estrés y consultar al veterinario ante cualquier signo. Algunos gatos eliminan el virus tras la infección inicial; otros permanecen positivos de por vida.
-                </p>
-              </div>
-            </div>
-          </article>
-
-          <!-- Enfermedad 5: Panleucopenia Felina -->
-          <article class="disease-card" data-category="infecciosa emergencia">
-            <div class="disease-badge-row">
-              <span class="triage-badge triage-red">&#9888; Código Rojo &bull; Urgencia Viral</span>
-              <span class="disease-type">Gastrointestinal Viral</span>
-            </div>
-            <div class="disease-header">
-              <div class="disease-icon-box">&#129440;</div>
-              <div>
-                <h3 class="disease-title">Panleucopenia Felina</h3>
-                <span class="disease-scientific">Parvovirus felino (FPV) &bull; Enteritis infecciosa felina</span>
-              </div>
-            </div>
-            <div class="disease-body">
-              <div class="disease-field">
-                <h4><span class="field-icon">&#128218;</span> Descripción Etiopatogénica:</h4>
-                <p>
-                  Enfermedad viral aguda y muy contagiosa causada por un parvovirus felino resistente en el ambiente. Ataca tejidos de rápida división (intestino, médula ósea, ganglios) y puede causar la muerte, especialmente en gatitos.
-                </p>
-              </div>
-
-              <div class="disease-field signs-field">
-                <h4><span class="field-icon">&#128065;</span> Signos Clínicos Frecuentes:</h4>
-                <div class="tags-group">
-                  <span class="sign-tag">Fiebre alta</span>
-                  <span class="sign-tag">Letargo y anorexia</span>
-                  <span class="sign-tag">Vómitos y diarrea</span>
-                  <span class="sign-tag">Deshidratación</span>
-                  <span class="sign-tag">Leucopenia marcada</span>
-                  <span class="sign-tag">Dolor abdominal</span>
-                  <span class="sign-tag">Ataxia en gatitos por hipoplasia cerebelosa</span>
-                </div>
-              </div>
-
-              <div class="disease-field">
-                <h4><span class="field-icon">&#128737;</span> Medidas Preventivas Veterinarias:</h4>
-                <ul class="disease-list">
-                  <li><strong>Vacunación core (FVRCP):</strong> Serie desde las 6-8 semanas y refuerzos según el protocolo veterinario.</li>
-                  <li>Desinfectar con hipoclorito de sodio diluido y aislar a los gatos enfermos.</li>
-                  <li>Evitar el contacto con gatos no vacunados y con superficies contaminadas.</li>
-                  <li>Mantener a los gatitos con esquema completo antes de permitirles salir.</li>
-                </ul>
-              </div>
-
-              <div class="disease-field emergency-action">
-                <h4><span class="field-icon">&#129658;</span> Conducta Inmediata &amp; Atención Veterinaria:</h4>
-                <p>
-                  Urgencia veterinaria inmediata; no existe antiviral específico. El tratamiento incluye fluidoterapia, antieméticos, soporte nutricional y aislamiento. La vacunación es la medida preventiva más eficaz.
-                </p>
-              </div>
-            </div>
-          </article>
-
-          <!-- Enfermedad 6: Diabetes Mellitus -->
-          <article class="disease-card" data-category="metabolica">
-            <div class="disease-badge-row">
-              <span class="triage-badge triage-yellow">&#9888; Código Amarillo &bull; Enfermedad Metabólica Crónica</span>
-              <span class="disease-type">Endocrino / Metabólico</span>
-            </div>
-            <div class="disease-header">
-              <div class="disease-icon-box">&#128137;</div>
-              <div>
-                <h3 class="disease-title">Diabetes Mellitus</h3>
-                <span class="disease-scientific">Diabetes canina y felina &bull; Deficiencia o resistencia a la insulina</span>
-              </div>
-            </div>
-            <div class="disease-body">
-              <div class="disease-field">
-                <h4><span class="field-icon">&#128218;</span> Descripción Etiopatogénica:</h4>
-                <p>
-                  Trastorno endocrino caracterizado por hiperglucemia persistente. En perros suele deberse a la destrucción de las células beta del páncreas (similar a la diabetes tipo 1); en gatos predomina la resistencia a la insulina asociada a obesidad y pancreatitis (similar a la tipo 2).
-                </p>
-              </div>
-
-              <div class="disease-field signs-field">
-                <h4><span class="field-icon">&#128065;</span> Signos Clínicos Frecuentes:</h4>
-                <div class="tags-group">
-                  <span class="sign-tag">Poliuria y polidipsia</span>
-                  <span class="sign-tag">Polifagia con pérdida de peso</span>
-                  <span class="sign-tag">Letargo</span>
-                  <span class="sign-tag">Cataratas en perros</span>
-                  <span class="sign-tag">Debilidad y marcha plantígrada en gatos</span>
-                  <span class="sign-tag">Infecciones recurrentes</span>
-                </div>
-              </div>
-
-              <div class="disease-field">
-                <h4><span class="field-icon">&#128737;</span> Medidas Preventivas Veterinarias:</h4>
-                <ul class="disease-list">
-                  <li>Control de peso y dieta equilibrada; evitar la obesidad desde cachorro o gatito.</li>
-                  <li>Ejercicio regular y enriquecimiento ambiental para perros y gatos.</li>
-                  <li>Revisiones veterinarias y analíticas en animales senior o con signos compatibles.</li>
-                  <li>No administrar suplementos ni cambios dietéticos bruscos sin supervisión veterinaria.</li>
-                </ul>
-              </div>
-
-              <div class="disease-field emergency-action">
-                <h4><span class="field-icon">&#129658;</span> Conducta Inmediata &amp; Atención Veterinaria:</h4>
-                <p>
-                  El diagnóstico se confirma con glucemia persistente, glucosuria y fructosamina. El tratamiento incluye insulina, dieta y monitorización. La cetoacidosis diabética y la hipoglucemia son emergencias: no administrar insulina ni ajustar dosis sin control veterinario.
-                </p>
-              </div>
-            </div>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- VACUNACIÓN Y DESPARASITACIÓN -->
-    <section class="vaccines-section section-padding bg-light" id="vacunacion-desparasitacion">
-      <div class="container">
-        <div class="section-header text-center">
-          <span class="section-tag">Medicina Preventiva &amp; Control Parasitario</span>
-          <h2 class="section-title">Inmunización y Desparasitación Estratégica</h2>
-          <p class="section-subtitle">
-            La prevención moderna combina vacunación basada en riesgo, control parasitario individualizado y exámenes coprológicos. El criterio veterinario, la epidemiología regional y la normativa local determinan el protocolo final para cada perro y gato.
-          </p>
-        </div>
-
-        <!-- Tabla de Vacunación en Perros y Gatos -->
-        <div class="table-card">
-          <div class="table-card-header">
-            <div>
-              <h3>Esquema Orientativo de Inmunización en Perros y Gatos</h3>
-              <p class="table-note">
-                <strong>Aviso de Criterio Clínico:</strong> Este esquema es referencial según consensos de la <em>World Small Animal Veterinary Association (WSAVA)</em> y las autoridades sanitarias locales. La pauta final depende de la edad, el estilo de vida, el riesgo epidemiológico, la legislación nacional y el criterio del Médico Veterinario.
-              </p>
-            </div>
-            <span class="core-badge">Vacunas Esenciales vs. Riesgo</span>
-          </div>
-
-          <div class="table-responsive">
-            <table class="veterinary-table">
-              <thead>
-                <tr>
-                  <th>Enfermedad / Antígeno</th>
-                  <th>Categoría Médica</th>
-                  <th>Finalidad Inmunológica</th>
-                  <th>Pauta Habitual Recomendada*</th>
-                  <th>Factores de Riesgo / Epidemiología</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><strong>Rabia</strong><br><small>Perros y gatos &bull; virus inactivado</small></td>
-                  <td><span class="pill core">Esencial / Zoonosis</span></td>
-                  <td>Prevenir la encefalitis rábica letal; enfermedad de notificación obligatoria y riesgo para humanos.</td>
-                  <td>Primera dosis según legislación local (habitualmente 12-16 semanas); refuerzo al año y luego cada 1-3 años según vacuna y normativa.</td>
-                  <td>Obligatoria en muchas regiones; riesgo en animales con acceso al exterior o contacto con fauna silvestre.</td>
-                </tr>
-                <tr>
-                  <td><strong>Moquillo + Adenovirus 2 + Parvovirus</strong><br><small>Vacuna DHPP canina</small></td>
-                  <td><span class="pill core">Esencial (Core)</span></td>
-                  <td>Prevenir moquillo, hepatitis infecciosa canina y parvovirus, tres enfermedades graves y potencialmente mortales.</td>
-                  <td>Cachorros: 6-8 semanas y luego cada 2-4 semanas hasta las 16 semanas; refuerzo al año; después cada 3 años según WSAVA.</td>
-                  <td>Todos los perros; mayor riesgo en cachorros, perros no vacunados y animales en contacto con otros perros.</td>
-                </tr>
-                <tr>
-                  <td><strong>Leptospirosis</strong><br><small><em>Leptospira</em> spp.</small></td>
-                  <td><span class="pill risk">Por Riesgo (Risk-based) / Zoonosis</span></td>
-                  <td>Reducir el riesgo de enfermedad renal y hepática; puede transmitirse a humanos por la orina del animal infectado.</td>
-                  <td>Dos dosis separadas por 2-4 semanas desde las 8-12 semanas; refuerzo anual en zonas de riesgo.</td>
-                  <td>Perros con acceso a agua estancada, roedores, granjas o zonas endémicas; personal veterinario y tutores.</td>
-                </tr>
-                <tr>
-                  <td><strong>Traqueobronquitis infecciosa</strong><br><small><em>Bordetella bronchiseptica</em> + parainfluenza</small></td>
-                  <td><span class="pill risk">Por Riesgo (Risk-based)</span></td>
-                  <td>Reducir la severidad de la tos de las perreras y la transmisión en grupos de perros.</td>
-                  <td>Intranasal, oral o inyectable según producto; antes de guarderías, residencias, exposiciones o viajes; refuerzo anual o semestral según riesgo.</td>
-                  <td>Perros que conviven en grupos, viajan, acuden a guarderías o participan en eventos caninos.</td>
-                </tr>
-                <tr>
-                  <td><strong>Panleucopenia + Herpesvirus + Calicivirus</strong><br><small>Vacuna FVRCP felina</small></td>
-                  <td><span class="pill core">Esencial (Core)</span></td>
-                  <td>Prevenir panleucopenia, rinotraqueítis herpética y calicivirosis, causas frecuentes de enfermedad respiratoria y sistémica.</td>
-                  <td>Gatitos: 6-8 semanas y luego cada 3-4 semanas hasta las 16-20 semanas; refuerzo al año; después cada 3 años según WSAVA.</td>
-                  <td>Todos los gatos; mayor riesgo en gatitos, gatos no vacunados y gatos con acceso al exterior.</td>
-                </tr>
-                <tr>
-                  <td><strong>Leucemia felina (FeLV)</strong><br><small>Virus de la leucemia felina</small></td>
-                  <td><span class="pill risk">Por Riesgo (Risk-based)</span></td>
-                  <td>Prevenir la infección retroviral asociada a anemia, inmunosupresión y linfoma.</td>
-                  <td>Gatitos y gatos en riesgo; prueba previa; dos dosis separadas por 3-4 semanas; refuerzo anual en gatos con riesgo continuo.</td>
-                  <td>Gatos que salen al exterior, conviven con gatos positivos o viven en colonias.</td>
-                </tr>
-                <tr>
-                  <td><strong>Influenza canina</strong><br><small>H3N8 / H3N2</small></td>
-                  <td><span class="pill risk">Por Riesgo (Risk-based)</span></td>
-                  <td>Reducir el riesgo de enfermedad respiratoria en brotes y grupos de perros.</td>
-                  <td>Dos dosis y refuerzo anual según producto; considerar en brotes, guarderías, exposiciones o viajes.</td>
-                  <td>Perros en contacto con otros perros, especialmente en alojamientos colectivos o zonas con brotes.</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        <!-- Estrategia de Desparasitación y Coprología -->
-        <div class="deworming-strategy-box">
-          <div class="strategy-left">
-            <div class="icon-big">&#128300;</div>
-            <h3>Desparasitación Estratégica: del Calendario Ciego al Riesgo Individual</h3>
-            <p>
-              Durante años se desparasitó a todos los animales cada 2-3 meses de forma indiscriminada. Hoy se recomienda combinar la desparasitación inicial de cachorros y gatitos —justificada por el riesgo zoonótico de <em>Toxocara</em>— con exámenes coprológicos y evaluación de riesgo en adultos. La <strong>resistencia antihelmíntica</strong> es una preocupación creciente en nematodos caninos y felinos.
-            </p>
-            <div class="callout-card">
-              <h4>Regla de Oro Veterinaria: "Tratar según Riesgo y Diagnóstico"</h4>
-              <p>
-                En cachorros y gatitos, la desparasitación empírica está indicada por el riesgo de <em>Toxocara canis</em> y <em>Toxocara cati</em>, que pueden causar larva migrans visceral en humanos. En adultos, el examen coprológico y la evaluación del estilo de vida permiten decidir cuándo y con qué molécula tratar, evitando tratamientos innecesarios.
-              </p>
-            </div>
-          </div>
-
-          <div class="strategy-right">
-            <h4>Clasificación de Riesgo y Manejo Estratégico</h4>
-            <div class="hpg-tiers">
-              <div class="hpg-tier low">
-                <div class="tier-badge">Riesgo Bajo</div>
-                <div class="tier-info">
-                  <strong>Adulto sano sin exposición</strong>
-                  <p>Examen coprológico 1-2 veces al año; desparasitación dirigida solo si hay positividad o indicación veterinaria.</p>
-                </div>
-              </div>
-              <div class="hpg-tier medium">
-                <div class="tier-badge">Riesgo Medio</div>
-                <div class="tier-info">
-                  <strong>Salidas al exterior o contacto con otros animales</strong>
-                  <p>Coprología cada 6-12 meses y prevención periódica según producto, zona geográfica y criterio veterinario.</p>
-                </div>
-              </div>
-              <div class="hpg-tier high">
-                <div class="tier-badge">Riesgo Alto</div>
-                <div class="tier-info">
-                  <strong>Cachorros, gatitos, diarrea o convivencia con personas inmunodeprimidas</strong>
-                  <p>Protocolo veterinario específico, coprología de control e higiene estricta; prioridad por el riesgo zoonótico.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="pasture-tips">
-              <h5>Medidas No Farmacológicas Imprescindibles:</h5>
-              <ul>
-                <li><strong>Retiro inmediato de heces:</strong> Reduce la contaminación ambiental por huevos de <em>Toxocara</em> y anquilostomas.</li>
-                <li><strong>Higiene de comederos, bebederos y areneros:</strong> Lavar con agua caliente y detergente; evitar el acceso de animales callejeros.</li>
-                <li><strong>Pesaje y producto adecuado:</strong> Dosificar según peso y especie; nunca usar productos para perros en gatos, ya que algunos principios activos como la permetrina son tóxicos para los felinos.</li>
-                <li><strong>Control de pulgas y garrapatas:</strong> Algunos parásitos internos se transmiten por ingestión de pulgas; en zonas endémicas de dirofilariosis, la prevención mensual y la prueba anual son clave.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ANATOMÍA INTERACTIVA DE PERROS Y GATOS (ATLAS 360°) -->
-    <section class="anatomy-section section-padding" id="anatomia">
-      <div class="container">
-        <div class="section-header text-center">
-          <span class="section-tag">Morfofisiología y Exploración Clínica</span>
-          <h2 class="section-title">Atlas Anatómico Interactivo: Perros y Gatos</h2>
-          <p class="section-subtitle">
-            Explore las regiones corporales, la musculatura y el sistema óseo en caninos y felinos. Seleccione la especie y la lámina anatómica; presione sobre cualquier músculo, hueso o región en la ilustración o en los selectores para consultar su ubicación exacta, su nombre, para qué sirve y su relevancia clínica veterinaria.
-          </p>
-        </div>
-
-        <!-- Master Switcher: Especie y Lámina Anatómica -->
-        <div class="anatomy-master-bar">
-          <div class="control-group">
-            <span class="control-title"><span class="control-icon">&#128062;</span> Seleccionar Especie:</span>
-            <div class="segmented-control" id="speciesControl">
-              <button class="seg-btn active" data-species="perro" id="btnSpeciesDog">
-                <span class="seg-emoji">&#128054;</span> Perro (Canino)
-              </button>
-              <button class="seg-btn" data-species="gato" id="btnSpeciesCat">
-                <span class="seg-emoji">&#128008;</span> Gato (Felino)
-              </button>
-            </div>
-          </div>
-
-          <div class="control-group">
-            <span class="control-title"><span class="control-icon">&#128300;</span> Lámina Anatómica:</span>
-            <div class="segmented-control" id="layerControl">
-              <button class="seg-btn active" data-layer="cuerpo" id="btnLayerBody">
-                <span class="seg-emoji">&#128065;</span> Regiones Clínicas
-              </button>
-              <button class="seg-btn" data-layer="musculos" id="btnLayerMuscles">
-                <span class="seg-emoji">&#12170;</span> Sistema Muscular
-              </button>
-              <button class="seg-btn" data-layer="esqueleto" id="btnLayerSkeleton">
-                <span class="seg-emoji">&#129460;</span> Sistema Óseo
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div class="anatomy-interactive-wrapper">
-          <!-- Visual Image & Hotspots Container -->
-          <div class="anatomy-visual-container">
-            <div class="anatomy-image-viewport" id="anatomyViewport">
-              <img src="images/anatomy/perro-cuerpo.jpg" alt="Lámina Anatómica Veterinaria" class="anatomy-main-img" id="anatomyMainImg">
-              
-              <!-- Hotspots Layer (Pines interactivos flotantes posicionados en %) -->
-              <div class="anatomy-hotspots-overlay" id="anatomyHotspotsOverlay">
-                <!-- Generados dinámicamente según especie y lámina -->
-              </div>
-
-              <!-- Indicador / Banner de espera para lámina pendiente -->
-              <div class="anatomy-pending-notice hidden" id="anatomyPendingNotice">
-                <div class="pending-notice-card">
-                  <div class="pending-icon">&#129460;</div>
-                  <h3>Lámina del Esqueleto Felino en Espera</h3>
-                  <p>
-                    Listo para incorporar la fotografía del esqueleto del gato. Los puntos óseos interactivos se desplegarán inmediatamente tras cargarla.
-                  </p>
-                  <span class="pending-tag">Esperando foto del esqueleto felino</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Botonera / Chips interactivos de selección rápida -->
-            <div class="anatomy-chips-wrapper">
-              <div class="chips-header-row">
-                <span class="chips-label" id="anatomyChipsLabel">Seleccione una estructura para examinar:</span>
-                <span class="chips-count" id="anatomyChipsCount">6 regiones</span>
-              </div>
-              <div class="anatomy-chips-grid" id="anatomyChipsGrid">
-                <!-- Botones generados dinámicamente -->
-              </div>
-            </div>
-          </div>
-
-          <!-- Dynamic Medical Information Panel -->
-          <div class="anatomy-info-panel" id="anatomyInfoPanel">
-            <!-- Dynamic Content populated via JavaScript -->
-            <div class="panel-header">
-              <span class="anat-tag" id="anatRegionNumber">Canino &bull; Anatomía General</span>
-              <h3 id="anatRegionTitle">Cabeza Canina</h3>
-              <p class="anat-subtitle" id="anatRegionSubtitle">Aparato masticador, órganos sensoriales y vías aéreas superiores</p>
-            </div>
-
-            <div class="panel-content-body">
-              <!-- ¿Dónde se encuentra? -->
-              <div class="info-block">
-                <h4><span class="block-icon">&#128205;</span> ¿Dónde se encuentra? (Ubicación):</h4>
-                <p id="anatLocation">
-                  Cavidad craneal y facial en el extremo rostral del animal, articulada con la columna mediante el atlas.
-                </p>
-              </div>
-
-              <!-- ¿Para qué sirve? -->
-              <div class="info-block">
-                <h4><span class="block-icon">&#9881;</span> ¿Para qué sirve? (Función Biomecánica &amp; Fisiológica):</h4>
-                <p id="anatFunction">
-                  Aloja y protege el encéfalo y órganos sensoriales (visión, olfato, audición), ejecuta la aprehensión y trituración de alimentos e inicia la vía respiratoria superior.
-                </p>
-              </div>
-
-              <!-- Exploración clínica y patologías -->
-              <div class="info-block">
-                <h4><span class="block-icon">&#129658;</span> Relevancia Clínica &amp; Semiológica:</h4>
-                <p id="anatClinical">
-                  Inspección de simetría facial, color de mucosas conjuntival y gingival (TLLC &lt; 2 s), palpación de ganglios mandibulares y evaluación dental; otoscopia y examen de reflejos pupilares.
-                </p>
-              </div>
-
-              <!-- Bienestar animal -->
-              <div class="info-block alert-mini-block">
-                <h4><span class="block-icon">&#128161;</span> Relevancia para el Bienestar Animal:</h4>
-                <p id="anatWelfare">
-                  La revisión dental periódica y el cepillado con pasta veterinaria previenen dolor, infección y pérdida de piezas; en gatos, la gingivoestomatitis puede requerir manejo veterinario específico.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- HERRAMIENTA INTERACTIVA ADICIONAL: SIMULADOR DE TRIAGE CLÍNICO Y CONSTANTES VITALES -->
-    <section class="triage-section section-padding bg-light" id="triage-calculadora">
-      <div class="container">
-        <div class="section-header text-center">
-          <span class="section-tag special-tag">Herramienta Interactiva para la Defensa</span>
-          <h2 class="section-title">Simulador de Constantes Vitales &amp; Triage Clínico</h2>
-          <p class="section-subtitle">
-            Demostración en vivo para el jurado: seleccione la especie y etapa vital, modifique las constantes fisiológicas en reposo para observar la respuesta del algoritmo educativo de orientación clínica.
-          </p>
-        </div>
-
-        <div class="triage-simulator-card">
-          <div class="sim-inputs-column">
-            <h3>Entrada de Parámetros Fisiológicos</h3>
-
-            <!-- Especie del Paciente -->
-            <div class="sim-control-group">
-              <div class="sim-label-row">
-                <label for="selectSpecies">Especie y Etapa Vital:</label>
-                <span class="sim-curr-val" id="valSpecies">Perro adulto</span>
-              </div>
-              <select id="selectSpecies" class="sim-select">
-                <option value="perro">Perro adulto</option>
-                <option value="perro_cachorro">Perro cachorro</option>
-                <option value="gato">Gato adulto</option>
-                <option value="gato_cachorro">Gato cachorro</option>
-              </select>
-            </div>
-
-            <!-- Frecuencia Cardíaca -->
-            <div class="sim-control-group">
-              <div class="sim-label-row">
-                <label for="inputFC">Frecuencia Cardíaca (lpm):</label>
-                <span class="sim-curr-val" id="valFC">100 lpm</span>
-              </div>
-              <input type="range" id="inputFC" min="40" max="260" value="100" step="1" class="sim-slider">
-              <div class="sim-range-labels">
-                <span>40 (Bradicardia)</span>
-                <span id="fcNormalLabel">Perro: 60-160 lpm</span>
-                <span>260 (Taquicardia)</span>
-              </div>
-            </div>
-
-            <!-- Frecuencia Respiratoria -->
-            <div class="sim-control-group">
-              <div class="sim-label-row">
-                <label for="inputFR">Frecuencia Respiratoria (rpm):</label>
-                <span class="sim-curr-val" id="valFR">20 rpm</span>
-              </div>
-              <input type="range" id="inputFR" min="4" max="80" value="20" step="1" class="sim-slider">
-              <div class="sim-range-labels">
-                <span>4 (Depresión)</span>
-                <span id="frNormalLabel">Perro: 10-30 rpm</span>
-                <span>80 (Taquipnea)</span>
-              </div>
-            </div>
-
-            <!-- Temperatura Rectal -->
-            <div class="sim-control-group">
-              <div class="sim-label-row">
-                <label for="inputTemp">Temperatura Rectal (°C):</label>
-                <span class="sim-curr-val" id="valTemp">38.5 °C</span>
-              </div>
-              <input type="range" id="inputTemp" min="34.0" max="43.0" value="38.5" step="0.1" class="sim-slider">
-              <div class="sim-range-labels">
-                <span>34.0 (Hipotermia)</span>
-                <span id="tempNormalLabel">Perro: 37.5 - 39.2 °C</span>
-                <span>43.0 (Hiperpirexia)</span>
-              </div>
-            </div>
-
-            <!-- Tiempo de Llenado Capilar (TLLC) -->
-            <div class="sim-control-group">
-              <div class="sim-label-row">
-                <label for="selectTLLC">Tiempo de Llenado Capilar (TLLC):</label>
-              </div>
-              <select id="selectTLLC" class="sim-select">
-                <option value="1.5">Menor a 2 segundos (Perfusión Tisular Normal)</option>
-                <option value="2.5">2.5 a 3.0 segundos (Deshidratación Leve / Hipovolemia)</option>
-                <option value="4.0">Mayor a 3.5 - 4 segundos (Deshidratación Severa / Shock)</option>
-              </select>
-            </div>
-
-            <div class="sim-presets">
-              <span>Cargar Casos Clínicos Típicos:</span>
-              <button class="preset-btn" onclick="loadTriagePreset('normal')">Perro Sano</button>
-              <button class="preset-btn" onclick="loadTriagePreset('perro_cachorro_sano')">Perro Cachorro Sano</button>
-              <button class="preset-btn" onclick="loadTriagePreset('gato_sano')">Gato Sano</button>
-              <button class="preset-btn" onclick="loadTriagePreset('gato_cachorro_sano')">Gato Cachorro Sano</button>
-              <button class="preset-btn" onclick="loadTriagePreset('parvovirus')">Parvovirus Canino</button>
-              <button class="preset-btn" onclick="loadTriagePreset('obstruccion')">Obstrucción Uretral Felina</button>
-              <button class="preset-btn" onclick="loadTriagePreset('panleucopenia')">Panleucopenia Felina</button>
-              <button class="preset-btn" onclick="loadTriagePreset('moquillo')">Moquillo Canino</button>
-              <button class="preset-btn" onclick="loadTriagePreset('felv')">Leucemia Felina (FeLV)</button>
-              <button class="preset-btn" onclick="loadTriagePreset('diabetes')">Diabetes Mellitus</button>
-            </div>
-          </div>
-
-          <!-- Triage Evaluation Result Column -->
-          <div class="sim-result-column" id="triageResultBox">
-            <div class="triage-status-card status-green" id="triageIndicator">
-              <div class="triage-status-header">
-                <span class="triage-dot"></span>
-                <span class="triage-classification-title" id="triageClassTitle">CÓDIGO VERDE: ESTABILIDAD FISIOLÓGICA</span>
-              </div>
-              <h4 class="triage-eval-headline" id="triageHeadline">Parámetros dentro de Límites Normales</h4>
-              <p class="triage-eval-description" id="triageDesc">
-                El paciente canino presenta una frecuencia cardíaca, respiratoria, temperatura y tiempo de llenado capilar compatibles con reposo fisiológico saludable. No se observan signos de estrés sistémico agudo.
-              </p>
-
-              <div class="triage-clinical-action" id="triageActionBox">
-                <strong>Conducta Veterinaria Recomendada:</strong>
-                <span id="triageActionText">Mantener rutina preventiva habitual de agua, alimentación equilibrada y ejercicio. Continuar monitoreo de bienestar diario.</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONSEJOS VETERINARIOS -->
-    <section class="tips-section section-padding" id="consejos">
-      <div class="container">
-        <div class="section-header text-center">
-          <span class="section-tag">Buenas Prácticas Clínicas</span>
-          <h2 class="section-title">Galería de Consejos Veterinarios</h2>
-          <p class="section-subtitle">
-            Recomendaciones prácticas aplicables en el hogar, guarderías y centros veterinarios para prevenir accidentes, reducir estrés y mejorar la bioseguridad.
-          </p>
-        </div>
-
-        <div class="tips-grid">
-          <!-- Consejo 1 -->
-          <div class="tip-card">
-            <div class="tip-number">01</div>
-            <div class="tip-content">
-              <h3>Manejo Responsable y Etología de Perros y Gatos</h3>
-              <p>
-                Perros y gatos tienen lenguajes corporales distintos. En perros, evite aproximaciones directas y respete las señales de calma (bostezo, lamido de hocico, cola baja). En gatos, permita que se acerquen, evite la restricción forzada y ofrezca escondites. Un manejo suave y predecible reduce el cortisol y el riesgo de mordeduras.
-              </p>
-              <span class="tip-tag">Etología &amp; Seguridad</span>
-            </div>
-          </div>
-
-          <!-- Consejo 2 -->
-          <div class="tip-card">
-            <div class="tip-number">02</div>
-            <div class="tip-content">
-              <h3>Identificación Temprana del Dolor</h3>
-              <p>
-                Use escalas validadas como la Feline Grimace Scale y la Colorado State University Canine Acute Pain Scale. En gatos, busque orejas giradas hacia atrás, ojos entrecerrados, hocico tenso, postura encorvada, escondite y falta de acicalamiento. En perros, jadeo, temblor, cojera, reticencia a moverse y cambios de apetito. El dolor crónico puede manifestarse solo como cambios de conducta.
-              </p>
-              <span class="tip-tag">Semiología &amp; Diagnóstico</span>
-            </div>
-          </div>
-
-          <!-- Consejo 3 -->
-          <div class="tip-card">
-            <div class="tip-number">03</div>
-            <div class="tip-content">
-              <h3>Bioseguridad y Limpieza Rigurosa del Hogar</h3>
-              <p>
-                El parvovirus canino y el parvovirus felino resisten en el ambiente; limpie con hipoclorito diluido (1:32) y retire las heces de inmediato. Lave comederos, bebederos y areneros con agua caliente y detergente; no comparta utensilios entre animales enfermos y sanos. Ventile y desinfecte las zonas de descanso.
-              </p>
-              <span class="tip-tag">Bioseguridad &amp; Sanidad</span>
-            </div>
-          </div>
-
-          <!-- Consejo 4 -->
-          <div class="tip-card">
-            <div class="tip-number">04</div>
-            <div class="tip-content">
-              <h3>Prevención de Lesiones y Obesidad</h3>
-              <p>
-                Mantenga un peso saludable (condición corporal 4-5/9) para reducir el riesgo de artrosis, diabetes y problemas cardíacos. Evite ejercicio intenso en cachorros en crecimiento y en razas braquicéfalas; use rampas o escalones para animales senior. Corte las uñas cada 3-4 semanas y revise las almohadillas después de los paseos.
-              </p>
-              <span class="tip-tag">Medicina Preventiva</span>
-            </div>
-          </div>
-
-          <!-- Consejo 5 -->
-          <div class="tip-card">
-            <div class="tip-number">05</div>
-            <div class="tip-content">
-              <h3>Protocolo de Cuarentena para Nuevos Ingresos</h3>
-              <p>
-                Todo perro o gato nuevo debe tener una revisión veterinaria, prueba de FeLV/FIV en gatos, coprología y vacunas al día antes de convivir con los residentes. Mantenga aislamiento durante 14-21 días, lave manos y utensilios, y observe signos de enfermedad respiratoria o digestiva.
-              </p>
-              <span class="tip-tag">Epidemiología Preventiva</span>
-            </div>
-          </div>
-
-          <!-- Consejo 6 -->
-          <div class="tip-card">
-            <div class="tip-number">06</div>
-            <div class="tip-content">
-              <h3>Botiquín de Primeros Auxilios</h3>
-              <p>
-                Incluya termómetro digital, gasas estériles, vendas autoadherentes, solución salina, clorhexidina diluida según indicación, polvo hemostático, bozal de emergencia, transportadora y teléfono del veterinario. Nunca administre paracetamol, ibuprofeno ni otros medicamentos humanos sin indicación; no induzca el vómito sin consultar.
-              </p>
-              <span class="tip-tag">Logística de Emergencias</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- EVALUACIÓN INTERACTIVA (QUIZ DE 10 PREGUNTAS) -->
-    <section class="quiz-section section-padding bg-light" id="evaluacion">
-      <div class="container">
-        <div class="section-header text-center">
-          <span class="section-tag special-tag">Validación Académica de Conocimientos</span>
-          <h2 class="section-title">Evaluación Interactiva de Medicina de Perros y Gatos</h2>
-          <p class="section-subtitle">
-            Cuestionario de 10 preguntas de selección múltiple con fundamentación clínica veterinaria. Ponga a prueba sus conocimientos en cuidados básicos, semiología, prevención y urgencias de perros y gatos.
-          </p>
-        </div>
-
-        <div class="quiz-card-wrapper" id="quizContainer">
-          <!-- Quiz Top Info & Progress Bar -->
-          <div class="quiz-progress-header">
-            <div class="quiz-meta-info">
-              <span>Pregunta <strong id="currentQuestionNum">1</strong> de <strong>10</strong></span>
-              <span class="quiz-score-badge">Puntuación: <strong id="liveScoreText">0</strong> / 10</span>
-            </div>
-            <div class="progress-track">
-              <div class="progress-fill" id="quizProgressBar" style="width: 10%;"></div>
-            </div>
-          </div>
-
-          <!-- Dynamic Question Area -->
-          <div class="quiz-question-container" id="questionBox">
-            <h3 class="question-text" id="questionText">Cargando pregunta...</h3>
-            
-            <div class="options-list" id="optionsList">
-              <!-- Options injected via JavaScript -->
-            </div>
-
-            <!-- Feedback Alert (Shown after selecting an option) -->
-            <div class="quiz-feedback hidden" id="quizFeedback">
-              <div class="feedback-icon" id="feedbackIcon">&#10003;</div>
-              <div class="feedback-text">
-                <strong id="feedbackTitle">¡Respuesta Correcta!</strong>
-                <p id="feedbackExplanation">Explicación clínica detallada...</p>
-              </div>
-            </div>
-
-            <!-- Quiz Navigation Action -->
-            <div class="quiz-action-bar">
-              <button class="btn btn-primary" id="nextQuestionBtn" disabled>
-                <span>Siguiente Pregunta</span>
-                <span class="btn-arrow">&rarr;</span>
-              </button>
-            </div>
-          </div>
-
-          <!-- Quiz Final Summary Screen (Initially Hidden) -->
-          <div class="quiz-summary-screen hidden" id="quizSummaryScreen">
-            <div class="summary-icon-box" id="summaryIcon">&#127881;</div>
-            <h3 class="summary-title" id="summaryTitle">¡Evaluación Completada!</h3>
-            <p class="summary-subtitle" id="summarySubtitle">Resultado de su valoración en medicina de perros y gatos:</p>
-
-            <div class="final-score-display">
-              <div class="score-circle">
-                <span class="score-number" id="finalScoreNumber">10</span>
-                <span class="score-total">/ 10</span>
-              </div>
-              <div class="score-verdict" id="scoreVerdict">
-                <h4>Criterio Clínico Veterinario Sobresaliente</h4>
-                <p>Excelente dominio de las constantes fisiológicas, pautas de vacunación y manejo de urgencias en perros y gatos.</p>
-              </div>
-            </div>
-
-            <!-- Answers Breakdown Review List -->
-            <div class="answers-review-container">
-              <h4>Desglose y Revisión Pedagógica de Preguntas:</h4>
-              <div class="review-list" id="reviewList">
-                <!-- Populated dynamically -->
-              </div>
-            </div>
-
-            <div class="summary-actions">
-              <button class="btn btn-secondary" onclick="restartQuiz()">
-                <span>&#8634; Repetir Evaluación</span>
-              </button>
-              <a href="#contacto" class="btn btn-primary">
-                <span>Contactar a los Ponentes</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FUENTES BIBLIOGRÁFICAS VETERINARIAS CONFIABLES -->
-    <section class="references-section section-padding" id="bibliografia">
-      <div class="container">
-        <div class="section-header text-center">
-          <span class="section-tag">Rigor Científico y Literatura Médica</span>
-          <h2 class="section-title">Fuentes Bibliográficas Veterinarias</h2>
-          <p class="section-subtitle">
-            Referencias académicas indexadas y directrices internacionales que respaldan el contenido científico expuesto en la plataforma.
-          </p>
-        </div>
-
-        <div class="references-grid">
-          <div class="ref-card">
-            <div class="ref-icon">&#128214;</div>
-            <div class="ref-details">
-              <h4>World Small Animal Veterinary Association (WSAVA)</h4>
-              <p><em>WSAVA Guidelines for the Vaccination of Dogs and Cats.</em> Vaccination Guidelines Group (actualizaciones vigentes).</p>
-            </div>
-          </div>
-
-          <div class="ref-card">
-            <div class="ref-icon">&#128214;</div>
-            <div class="ref-details">
-              <h4>WSAVA Global Nutrition and Parasite Control</h4>
-              <p><em>Global Nutrition Guidelines</em> y <em>Parasite Control Guidelines.</em> Recomendaciones sobre condición corporal, dieta y control parasitario basado en riesgo.</p>
-            </div>
-          </div>
-
-          <div class="ref-card">
-            <div class="ref-icon">&#128214;</div>
-            <div class="ref-details">
-              <h4>Ettinger, S. J., Feldman, E. C., &amp; Côté, E.</h4>
-              <p><em>Textbook of Veterinary Internal Medicine: Diseases of the Dog and the Cat</em> (9th Edition). Elsevier. Referencia canónica de medicina interna de pequeños animales.</p>
-            </div>
-          </div>
-
-          <div class="ref-card">
-            <div class="ref-icon">&#128214;</div>
-            <div class="ref-details">
-              <h4>Greene, C. E.</h4>
-              <p><em>Infectious Diseases of the Dog and Cat</em> (5th Edition). Elsevier. Tratado de referencia sobre parvovirus, moquillo, panleucopenia y retrovirus felinos.</p>
-            </div>
-          </div>
-
-          <div class="ref-card">
-            <div class="ref-icon">&#128214;</div>
-            <div class="ref-details">
-              <h4>American Association of Feline Practitioners (AAFP)</h4>
-              <p><em>2020 AAFP Feline Retrovirus Testing and Management Guidelines.</em> Recomendaciones sobre FeLV, FIV y manejo de gatos positivos.</p>
-            </div>
-          </div>
-
-          <div class="ref-card">
-            <div class="ref-icon">&#128214;</div>
-            <div class="ref-details">
-              <h4>Merck Veterinary Manual</h4>
-              <p><em>The Merck Veterinary Manual</em> (edición vigente en línea). Merck &amp; Co. Secciones de constantes fisiológicas, enfermedades infecciosas y urgencias en perros y gatos.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACTO -->
-    <section class="contact-section section-padding bg-light" id="contacto">
-      <div class="container">
-        <div class="section-header text-center">
-          <span class="section-tag">Defensa Académica y Consultas</span>
-          <h2 class="section-title">Información de Contacto</h2>
-          <p class="section-subtitle">
-            Póngase en contacto con los responsables del proyecto académico para consultas técnicas, defensa ante el jurado o asesoría en medicina preventiva de perros y gatos.
-          </p>
-        </div>
-
-        <div class="contact-wrapper" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
-          <!-- Author Info Card 1: Elianny -->
-          <div class="contact-info-card">
-            <div class="speaker-profile">
-              <div class="speaker-avatar-circle" style="width: 80px; height: 80px; border-radius: 50%; overflow: hidden; border: 2px solid var(--color-earth-gold);">
-                <!-- FOTO DE ELIANNY CON NOMBRE LIMPIO -->
-                <img src="images/Gemini_Generated_Image.jpeg" alt="Elianny Berrio" style="width: 100%; height: 100%; object-fit: cover;">
-              </div>
-              <div class="speaker-meta">
-                <span class="speaker-title-badge">Investigadora</span>
-                <h3>Elianny Berrio</h3>
-                <p>Medicina de Perros y Gatos</p>
-              </div>
-            </div>
-
-            <div class="contact-methods">
-              <div class="contact-method-item">
-                <div class="method-icon">&#9993;</div>
-                <div class="method-details">
-                  <span class="method-label">Correo Electrónico:</span>
-                  <a href="mailto:eliannyberrío14@gmail.com" class="method-val">eliannyberrío14@gmail.com</a>
-                </div>
-              </div>
-
-              <div class="contact-method-item">
-                <div class="method-icon">&#9742;</div>
-                <div class="method-details">
-                  <span class="method-label">Teléfono:</span>
-                  <a href="tel:04244419871" class="method-val">0424-4419871</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Author Info Card 2: Nicole -->
-          <div class="contact-info-card">
-            <div class="speaker-profile">
-              <div class="speaker-avatar-circle" style="width: 80px; height: 80px; border-radius: 50%; overflow: hidden; border: 2px solid var(--color-earth-gold);">
-                <!-- FOTO DE NICOLE CON NOMBRE LIMPIO -->
-                <img src="images/Gemini_Generated_Image1.jpeg" alt="Nicole Bolívar" style="width: 100%; height: 100%; object-fit: cover;">
-              </div>
-              <div class="speaker-meta">
-                <span class="speaker-title-badge">Investigadora</span>
-                <h3>Nicole Bolívar</h3>
-                <p>Medicina de Perros y Gatos</p>
-              </div>
-            </div>
-
-            <div class="contact-methods">
-              <div class="contact-method-item">
-                <div class="method-icon">&#9993;</div>
-                <div class="method-details">
-                  <span class="method-label">Correo Electrónico:</span>
-                  <a href="mailto:nicoleclb7@gmail.com" class="method-val">nicoleclb7@gmail.com</a>
-                </div>
-              </div>
-
-              <div class="contact-method-item">
-                <div class="method-icon">&#9742;</div>
-                <div class="method-details">
-                  <span class="method-label">Teléfono:</span>
-                  <a href="tel:04124198446" class="method-val">0412-4198446</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div style="max-width: 820px; margin: 2rem auto 0;">
-          <div class="jury-notice-card">
-            <h4>&#9878; Espacio para el Jurado Calificador</h4>
-            <p>Este sistema ha sido diseñado como prototipo de portal clínico interactivo de código abierto (HTML5/CSS3/JavaScript puro). Las herramientas interactivas funcionan sin conexión; las imágenes y las fuentes externas cuentan con respaldos locales o del sistema para evitar interrupciones durante la defensa oral.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- MODAL INFORMATIVO DINÁMICO DE CUIDADOS BÁSICOS -->
-  <div class="modal-backdrop hidden" id="careModalBackdrop" onclick="closeCareModal(event)">
-    <div class="modal-dialog" onclick="event.stopPropagation()">
-      <button class="modal-close-btn" onclick="closeCareModal()" aria-label="Cerrar ventana">&times;</button>
-      <div class="modal-header">
-        <span class="modal-tag" id="modalTag">Protocolo Veterinario</span>
-        <h3 id="modalTitle">Título del Cuidado</h3>
-      </div>
-      <div class="modal-body" id="modalBody">
-        <!-- Content inserted dynamically -->
-      </div>
-      <div class="modal-footer">
-        <button class="btn btn-secondary" onclick="closeCareModal()">Cerrar Ventana</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- BOTÓN VOLVER ARRIBA -->
-  <button class="back-to-top hidden" id="backToTopBtn" onclick="scrollToTop()" aria-label="Volver arriba">
-    &#8593;
-  </button>
-
-  <!-- PIE DE PÁGINA (FOOTER) REQUERIDO -->
-  <footer class="site-footer">
-    <div class="container footer-container">
-      <div class="footer-top">
-        <div class="footer-brand">
-          <div class="footer-logo-text">
-            <span class="logo-txt">PEQUEÑOS AMIGOS</span>
-            <span class="sub-txt">Clínica Veterinaria &bull; Medicina Preventiva de Perros y Gatos</span>
-          </div>
-          <p class="footer-mission-snippet">
-            Plataforma universitaria dedicada a la educación técnica, semiología y bienestar integral de perros y gatos. Diseñada con rigor para la defensa académica de grado ante el jurado calificador.
-          </p>
-        </div>
-
-        <div class="footer-links-col">
-          <h4>Navegación Rápida</h4>
-          <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
-            <li><a href="#cuidados-basicos">Cuidados Básicos</a></li>
-            <li><a href="#enfermedades">Enfermedades Frecuentes</a></li>
-            <li><a href="#vacunacion-desparasitacion">Vacunación &amp; Desparasitación</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-links-col">
-          <h4>Módulos Interactivos</h4>
-          <ul>
-            <li><a href="#anatomia">Anatomía Interactiva</a></li>
-            <li><a href="#triage-calculadora">Simulador de Triage</a></li>
-            <li><a href="#consejos">Galería de Consejos</a></li>
-            <li><a href="#evaluacion">Evaluación (Quiz 10 Preguntas)</a></li>
-            <li><a href="#bibliografia">Fuentes Bibliográficas</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-author-col">
-          <h4>Responsables Académicas</h4>
-          <p><strong>ELIANNY BERRIO &amp; NICOLE BOLÍVAR</strong></p>
-          <p>Correo: <a href="mailto:eliannyberrío14@gmail.com">eliannyberrío14@gmail.com</a> / <a href="mailto:nicoleclb7@gmail.com">nicoleclb7@gmail.com</a></p>
-          <p>Teléfonos: <a href="tel:04244419871">0424-4419871</a> / <a href="tel:04124198446">0412-4198446</a></p>
-          <div class="footer-academic-stamp">
-            <span>Defensa de Grado &bull; Medicina Veterinaria</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <p class="mandatory-footer-text">Clínica Veterinaria Pequeños Amigos | Proyecto Académico de Medicina Veterinaria | 2026</p>
-        <p class="footer-disclaimer-text">
-          Material educativo desarrollado exclusivamente para fines académicos y de divulgación. En caso de emergencia o enfermedad, consulte de forma presencial con un Médico Veterinario colegiado.
-        </p>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Main JavaScript Logic -->
-  <script src="script.js"></script>
-</body>
-</html>
- 
+/**
+ * ============================================================================
+ * VETSALUD - LÓGICA INTERACTIVA Y SEMIOLOGÍA DE PERROS Y GATOS
+ * Proyecto Académico de Medicina Veterinaria | 2026
+ * Ponente: MV Simón Quintero
+ * ============================================================================
+ */
+
+document.addEventListener('DOMContentLoaded', () => {
+  initNavigation();
+  initAnatomyModule();
+  initTriageSimulator();
+  initDiseaseFilters();
+  initQuizModule();
+  initScrollEffects();
+  initImageOfflineFallbacks();
+});
+
+/* ==========================================================================
+   1. NAVEGACIÓN Y MENÚ RESPONSIVO
+   ========================================================================== */
+function initNavigation() {
+  const navToggle = document.getElementById('navToggle');
+  const navMenu = document.getElementById('navMenu');
+  const header = document.getElementById('header');
+  const navLinks = document.querySelectorAll('.nav-link');
+
+  // Toggle Menú Móvil
+  if (navToggle && navMenu) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = navMenu.classList.toggle('active');
+      navToggle.classList.toggle('open');
+      navToggle.setAttribute('aria-expanded', isOpen);
+    });
+
+    // Cerrar menú al hacer clic en un enlace
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+        navToggle.classList.remove('open');
+        navToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+
+  // Sombra al hacer scroll en cabecera
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 40) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+
+  // Resaltado de sección activa según scroll (Spy)
+  const sections = document.querySelectorAll('section[id]');
+  window.addEventListener('scroll', () => {
+    const scrollY = window.pageYOffset;
+    sections.forEach(current => {
+      const sectionHeight = current.offsetHeight;
+      const sectionTop = current.offsetTop - 120;
+      const sectionId = current.getAttribute('id');
+      const navItem = document.querySelector(`.nav-link[href*="${sectionId}"]`);
+
+      if (navItem) {
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+          navItem.classList.add('active');
+        } else {
+          navItem.classList.remove('active');
+        }
+      }
+    });
+  });
+}
+
+/* ==========================================================================
+   2. ATLAS ANATÓMICO INTERACTIVO: PERROS Y GATOS (360°)
+   ========================================================================== */
+const anatomyAtlas = {
+  "perro": {
+    "cuerpo": {
+      "image": "images/anatomy/perro-cuerpo.jpg",
+      "title": "Perro &bull; Regiones Clínicas Externas",
+      "subtitle": "Puntos de exploración semiológica, auscultación y morfología exterior",
+      "items": [
+        {
+          "id": "cabeza",
+          "num": 1,
+          "name": "Cabeza Canina",
+          "x": 18,
+          "y": 22,
+          "tag": "Región 1 &bull; Cabeza",
+          "subtitle": "Órganos sensoriales, cavidad oral y vías aéreas superiores",
+          "location": "Extremo anterior del cuerpo, articulada con el cuello en la unión occipitoatloidea.",
+          "function": "Aloja el encéfalo, órganos sensoriales (visión, olfato, audición), realiza la masticación y aprehensión con 42 piezas dentales.",
+          "clinical": "Exploración de mucosas orales (TLLC < 2 s), revisión dental de cálculo y periodontitis, palpación de nódulos linfáticos mandibulares y simetría facial.",
+          "welfare": "El cepillado dental con pasta veterinaria previene dolor crónico, bacteriemia y fístulas oronasales; evitar collares que causen presión ocular en braquicéfalos."
+        },
+        {
+          "id": "cuello",
+          "num": 2,
+          "name": "Cuello y Canal Yugular",
+          "x": 28,
+          "y": 34,
+          "tag": "Región 2 &bull; Cuello",
+          "subtitle": "Tráquea, esófago, glándula tiroides y acceso vascular",
+          "location": "Entre la cabeza y el tórax; comprende 7 vértebras cervicales, musculatura braquiocefálica y el surco yugular.",
+          "function": "Soporte flexible de la cabeza, conducción de aire traqueal y bolo alimenticio esofágico, y retorno venoso yugular.",
+          "clinical": "Palpación traqueal para provocar el reflejo tusígeno en colapso traqueal (tos en graznido de ganso); punción de vena yugular para tomas de muestras sanguíneas.",
+          "welfare": "Usar arnés pectoral en lugar de collar en razas miniatura propensas a colapso de tráquea (Chihuahua, Caniche, Pomerania)."
+        },
+        {
+          "id": "torax",
+          "num": 3,
+          "name": "Tórax y Área Cardiorrespiratoria",
+          "x": 42,
+          "y": 46,
+          "tag": "Región 3 &bull; Tórax",
+          "subtitle": "Focos cardíacos, campos pulmonares y 13 pares de costillas",
+          "location": "Entre el cuello y el diafragma, delimitado por 13 vértebras torácicas, costillas y el esternón.",
+          "function": "Aloja el corazón y los pulmones; genera la presión negativa torácica indispensable para la respiración.",
+          "clinical": "Auscultación de focos cardíacos en hemitórax izquierdo (PAM: Pulmonar 3.º, Aórtico 4.º, Mitral 5.º espacio intercostal) y derecho (Tricúspide 4.º). Frecuencia normal: 60-160 lpm.",
+          "welfare": "Detección precoz de soplos mitrales en razas predispuestas (Cavalier, Poodle) antes de la insuficiencia cardíaca congestiva."
+        },
+        {
+          "id": "abdomen",
+          "num": 4,
+          "name": "Abdomen Canino",
+          "x": 58,
+          "y": 44,
+          "tag": "Región 4 &bull; Abdomen",
+          "subtitle": "Tracto gastrointestinal, hígado, bazo, riñones y vejiga",
+          "location": "Entre el diafragma y la entrada pélvica; pared muscular ventral y lateral.",
+          "function": "Digestión, absorción de nutrientes, metabolismo hepático, detoxificación y excreción urinaria.",
+          "clinical": "Palpación abdominal suave bimanual para detectar dolor (abdomen agudo), organomegalia, cuerpos extraños intestinales, distensión gástrica o cálculos.",
+          "welfare": "Prevención del Síndrome de Dilatación-Vólvulo Gástrico (DVG) en razas grandes: evitar ejercicio vigoroso inmediatamente después de comer o beber en exceso."
+        },
+        {
+          "id": "extremidades",
+          "num": 5,
+          "name": "Extremidades y Locomoción",
+          "x": 34,
+          "y": 72,
+          "tag": "Región 5 &bull; Extremidades",
+          "subtitle": "Miembros torácicos (60% peso) y miembros pelvianos (propulsión)",
+          "location": "Miembros anteriores suspendidos por musculatura sinsarcósica; miembros posteriores articulados con la pelvis.",
+          "function": "Locomoción cuadrúpeda digitígrada, soporte del peso, equilibrio, salto y aceleración.",
+          "clinical": "Inspección de aplomos y marcha al paso y trote; test de cajón para ligamento cruzado craneal de rodilla; prueba de Ortolani para displasia de cadera.",
+          "welfare": "Control de peso estricto y ejercicio moderado regular para prevenir y mitigar la artrosis en perros senior."
+        },
+        {
+          "id": "almohadillas",
+          "num": 6,
+          "name": "Pata, Almohadillas y Uñas",
+          "x": 88,
+          "y": 75,
+          "tag": "Región 6 &bull; Apoyo Podal",
+          "subtitle": "Almohadillas digitales, carpianas/tarsianas y estuche ungueal",
+          "location": "Porción distal de la extremidad canina (manos y pies).",
+          "function": "Amortiguación de impactos, tracción antideslizante, disipación de calor por glándulas sudoríparas ecrinas y protección digital.",
+          "clinical": "Inspección de cortes, cuerpos extraños (espigas), pododermatitis interdigital, quemaduras térmicas por asfalto caliente y longitud de uñas.",
+          "welfare": "Corte de uñas periódico cada 3-4 semanas respetando el lecho vascular ('quick') para evitar deformaciones posturales."
+        }
+      ]
+    },
+    "musculos": {
+      "image": "images/anatomy/perro-musculos.jpg",
+      "title": "Perro &bull; Sistema Muscular Completo",
+      "subtitle": "Miología canina: función biomecánica, ubicación anatómica y semiología clínica",
+      "items": [
+        {
+          "id": "masseter",
+          "num": 1,
+          "name": "Músculo Masetero (Masseter)",
+          "x": 20,
+          "y": 20,
+          "tag": "Cabeza &bull; Músculo Masticador",
+          "subtitle": "Potente músculo elevador de la mandíbula",
+          "location": "En la cara lateral de la rama de la mandíbula, extendiéndose desde el arco cigomático hasta la fosa masetérica.",
+          "function": "Eleva y cierra la mandíbula con gran fuerza para triturar alimentos y morder; estabiliza la articulación temporomandibular.",
+          "clinical": "Es el músculo principal afectado en la miositis de los músculos masticatorios (enfermedad inmunomediada por anticuerpos anti-fibra 2M), produciendo trismo e imposibilidad de abrir la boca.",
+          "welfare": "El dolor masticatorio agudo provoca anorexia inmediata; la higiene dental previene abscesos de muelas carniceras con tumefacción en esta zona."
+        },
+        {
+          "id": "temporalis",
+          "num": 2,
+          "name": "Músculo Temporal (Temporalis)",
+          "x": 19,
+          "y": 12,
+          "tag": "Cabeza &bull; Músculo Craneal",
+          "subtitle": "El músculo masticador más voluminoso",
+          "location": "Ocupa toda la fosa temporal en la cara dorsolateral del cráneo, insertándose en el proceso coronoides mandibular.",
+          "function": "Cierra la boca con máxima potencia y mantiene la mandíbula apretada en la prensión de objetos y alimento.",
+          "clinical": "Su atrofia bilateral visible ('cabeza afinada') es un marcador semiológico clave de desnutrición avanzada, caquexia tumoral, hiperadrenocorticismo o miositis masticatoria crónica.",
+          "welfare": "La pérdida de masa temporal debe alertar al clínico sobre dolor crónico en boca o enfermedad sistémica consuntiva."
+        },
+        {
+          "id": "buccinator",
+          "num": 3,
+          "name": "Músculo Bucinador (Buccinator)",
+          "x": 14,
+          "y": 19,
+          "tag": "Cabeza &bull; Músculo Facial",
+          "subtitle": "Forma la pared muscular de la mejilla",
+          "location": "En la cara lateral del rostro entre los bordes alveolares del maxilar y la mandíbula.",
+          "function": "Mantiene el bolo alimenticio entre las arcadas dentales durante la masticación y retrae la comisura labial.",
+          "clinical": "Se paraliza en la parálisis del nervio facial (VII par craneal), provocando caída del labio, babeo continuo y acúmulo de alimento en el vestíbulo bucal.",
+          "welfare": "Requiere limpieza facial diaria en pacientes neurológicos para evitar dermatitis perioral por maceración salival."
+        },
+        {
+          "id": "sternocephalicus",
+          "num": 4,
+          "name": "Músculo Esternocefálico (Sternocephalicus)",
+          "x": 26,
+          "y": 27,
+          "tag": "Cuello &bull; Musculatura Ventral",
+          "subtitle": "Delimitador ventral del canal yugular",
+          "location": "Discurre a lo largo de la cara ventrolateral del cuello, desde el manubrio esternal hasta el hueso occipital y mastoides.",
+          "function": "Flexiona la cabeza y el cuello hacia abajo (en contracción bilateral); rota e inclina la cabeza hacia el mismo lado (contracción unilateral).",
+          "clinical": "Delimita el borde ventral del surco yugular; su palpación revela contracturas dolorosas en meningitis-arteritis sensible a esteroides (SRMA) y discopatías cervicales.",
+          "welfare": "Evitar tirones bruscos con collares en la tráquea y el cuello ventral para proteger este complejo muscular y nervioso."
+        },
+        {
+          "id": "cleidocephalicus",
+          "num": 5,
+          "name": "Cleidocefálico / Braquiocefálico (Cleidocephalicus)",
+          "x": 28,
+          "y": 35,
+          "tag": "Cuello y Hombro &bull; Conexión Cérvico-Brquial",
+          "subtitle": "Principal músculo protráctil del miembro anterior",
+          "location": "Se origina en la intersección clavicular fibrosa vestigial y se extiende hacia el cuello craneal y cráneo.",
+          "function": "Tracciona el miembro torácico hacia adelante (protracción) alargando la zancada; inclina y extiende el cuello lateralmente.",
+          "clinical": "Evaluado en cojeras del tren anterior; contracturas o desgarros limitan la fase craneal del paso.",
+          "welfare": "Los calentamientos previos al ejercicio intenso protegen este puente muscular en perros de agilidad y canicross."
+        },
+        {
+          "id": "omotransversarius",
+          "num": 6,
+          "name": "Músculo Omotransverso (Omotransversarius)",
+          "x": 32,
+          "y": 28,
+          "tag": "Cuello &bull; Musculatura Escapular",
+          "subtitle": "Conector entre el atlas y la escápula",
+          "location": "Banda muscular que discurre desde el ala del atlas (primera vértebra cervical) hasta el acromion de la escápula.",
+          "function": "Adelanta el miembro torácico y flexiona lateralmente el cuello.",
+          "clinical": "Cubre de forma superficial al linfonodo cervical superficial (preescapular); su palpación precisa es obligatoria en oncología veterinaria.",
+          "welfare": "La inflamación del nódulo bajo este músculo puede ser la primera señal de metástasis o infección dérmica regional."
+        },
+        {
+          "id": "trapezius",
+          "num": 7,
+          "name": "Músculo Trapecio (Trapezius)",
+          "x": 36,
+          "y": 24,
+          "tag": "Espalda &bull; Musculatura Toraco-Cervical",
+          "subtitle": "Músculo plano y triangular de fijación escapular",
+          "location": "Cubre la región dorsal del cuello y del tórax craneal, insertándose en toda la espina de la escápula.",
+          "function": "Eleva la extremidad anterior, fija la escápula contra el tórax y ayuda a bascular el hombro hacia adelante o atrás.",
+          "clinical": "Punto de referencia dorsal en la palpación de la cruz; presenta mialgias por sobrecarga en perros con cojeras compensatorias contralaterales.",
+          "welfare": "Los arneses deben permitir el libre deslizamiento escapular sin comprimir las inserciones del trapecio."
+        },
+        {
+          "id": "deltoid",
+          "num": 8,
+          "name": "Músculo Deltoides (Deltoid)",
+          "x": 34,
+          "y": 39,
+          "tag": "Hombro &bull; Articulación Escapulohumeral",
+          "subtitle": "Flexor y abductor lateral del hombro",
+          "location": "En la cara lateral de la articulación del hombro, con dos porciones (escapular y acromial) que convergen en la tuberosidad deltoidea del húmero.",
+          "function": "Flexiona la articulación del hombro y abduce el brazo (lo separa del cuerpo hacia afuera).",
+          "clinical": "Se explora en contracturas infraspinosas y deltoideas en perros de caza, las cuales provocan rotación externa característica de la mano.",
+          "welfare": "El estiramiento pasivo en fisioterapia restaura el rango articular del hombro tras inmovilizaciones quirúrgicas."
+        },
+        {
+          "id": "latissimus_dorsi",
+          "num": 9,
+          "name": "Músculo Dorsal Ancho (Latissimus dorsi)",
+          "x": 46,
+          "y": 35,
+          "tag": "Tórax &bull; Musculatura Dorsolateral",
+          "subtitle": "Gran abanico muscular retropulsor",
+          "location": "Amplia lámina muscular triangular en el dorso y pared costal lateral, convergiendo en la cara medial del húmero.",
+          "function": "Tracciona el miembro anterior hacia atrás (retropulsión) y flexiona el hombro; si el miembro está fijo, arrastra el tronco hacia adelante.",
+          "clinical": "Interviene de forma secundaria en la respiración forzada; su integridad es vital para nadar y galopar.",
+          "welfare": "La tensión en este músculo es muy común en perros con lordosis o dolor lumbar crónico compensatorio."
+        },
+        {
+          "id": "intercostals",
+          "num": 10,
+          "name": "Músculos Intercostales (Intercostals)",
+          "x": 49,
+          "y": 45,
+          "tag": "Tórax &bull; Musculatura Respiratoria",
+          "subtitle": "Motores de la expansión y retracción costal",
+          "location": "Ocupan los 12 espacios intercostales a cada lado del tórax; se dividen en externos (oblicuos caudoventrales) e internos.",
+          "function": "Los intercostales externos elevan y expanden las costillas en la inspiración; los internos deprimen las costillas en la espiración activa.",
+          "clinical": "En perros con dificultad respiratoria (disnea) o neumotórax, se evidencia un marcado esfuerzo intercostal y retracción paradójica.",
+          "welfare": "La presencia de 'respiración forzada intercostal' es una emergencia veterinaria inmediata (Código Rojo)."
+        },
+        {
+          "id": "pectoralis",
+          "num": 11,
+          "name": "Pectoral Mayor y Menor (Pectoralis)",
+          "x": 41,
+          "y": 56,
+          "tag": "Tórax &bull; Suelo Ventral del Pecho",
+          "subtitle": "Aductores del miembro anterior y soporte del tronco",
+          "location": "En el suelo del pecho, extendiéndose desde el esternón hasta el húmero y fascia del brazo.",
+          "function": "Aducen los miembros anteriores (juntan las patas hacia el centro) y suspenden el peso corporal entre ambas extremidades anteriores.",
+          "clinical": "Sitio de impacto directo en caídas frontales o atropellos; se revisa en traumatismos torácicos y hernias diafragmáticas.",
+          "welfare": "Un pecho musculado protege los órganos intratorácicos; la natación es un ejercicio terapéutico de bajo impacto para este grupo."
+        },
+        {
+          "id": "rectus_abdominis",
+          "num": 12,
+          "name": "Recto del Abdomen (Rectus abdominis)",
+          "x": 57,
+          "y": 58,
+          "tag": "Abdomen &bull; Pared Ventral",
+          "subtitle": "La cincha muscular longitudinal del vientre",
+          "location": "A ambos lados de la línea alba, extendiéndose desde el cartílago xifoides y costillas hasta el tendón prepúbico.",
+          "function": "Flexiona la columna vertebral, sostiene las vísceras abdominales y genera la presión necesaria para defecar, orinar y parir.",
+          "clinical": "La línea alba que une ambos rectos es la vía de abordaje quirúrgico por excelencia para laparotomías, cesáreas y esterilizaciones (OVH).",
+          "welfare": "Los cuidados postoperatorios de la herida en línea alba son cruciales para evitar dehiscencias y eventraciones."
+        },
+        {
+          "id": "obliques",
+          "num": 13,
+          "name": "Oblicuos Abdominales (External & Internal Obliques)",
+          "x": 57,
+          "y": 40,
+          "tag": "Abdomen &bull; Pared Lateral",
+          "subtitle": "Capas musculares cruzadas de compresión abdominal",
+          "location": "Cubren los flancos laterales del abdomen con fibras dispuestas en direcciones opuestas para máxima resistencia mecánica.",
+          "function": "Comprimen y protegen el contenido visceral abdominal; ayudan en la espiración forzada y arqueo del tronco.",
+          "clinical": "En peritonitis o hemoperitoneo agudo, se produce una contracción refleja espasmódica conocida como 'abdomen en tabla'.",
+          "welfare": "La palpación indolora de los flancos confirma la relajación y ausencia de dolor visceral agudo."
+        },
+        {
+          "id": "biceps_brachii",
+          "num": 14,
+          "name": "Bíceps Braquial (Biceps brachii)",
+          "x": 29,
+          "y": 54,
+          "tag": "Brazo &bull; Cara Craneal",
+          "subtitle": "Flexor del codo y estabilizador del hombro",
+          "location": "En la cara craneal del húmero, naciendo en el tubérculo supraglenoideo y cruzando el surco intertubercular.",
+          "function": "Flexiona la articulación del codo y extiende/estabiliza la articulación del hombro.",
+          "clinical": "Tenosinovitis bicipital muy común en razas de trabajo (Labrador, Golden, Pastor Alemán), causante de cojera anterior que empeora tras el reposo.",
+          "welfare": "El calentamiento y evitar paradas bruscas en juegos de persecución de pelotas reducen la incidencia de tendinopatías bicipitales."
+        },
+        {
+          "id": "triceps_brachii",
+          "num": 15,
+          "name": "Tríceps Braquial (Triceps brachii)",
+          "x": 34,
+          "y": 50,
+          "tag": "Brazo &bull; Cara Caudal",
+          "subtitle": "El extensor principal y sostén del codo",
+          "location": "Gran masa muscular con 4 cabezas (larga, lateral, medial y accesoria) que se insertan en la tuberosidad del olécranon.",
+          "function": "Es el músculo extensor indispensable del codo; sin él, la pata anterior se colapsaría por el peso del cuerpo.",
+          "clinical": "Inervado por el nervio radial; su parálisis provoca incapacidad absoluta de extender el codo y apoyo sobre el dorso de la mano.",
+          "welfare": "El tono tricipital es un indicador excelente de vitalidad y fuerza muscular en el examen neurológico canino."
+        },
+        {
+          "id": "gluteals",
+          "num": 16,
+          "name": "Músculos Glúteos (Gluteals)",
+          "x": 63,
+          "y": 34,
+          "tag": "Pelvis &bull; Región de la Grupa",
+          "subtitle": "Motores primarios de extensión de cadera",
+          "location": "Sobre el ala del ilion, insertándose en el trocánter mayor del fémur (glúteos superficial, medio y profundo).",
+          "function": "Extienden y abducen la articulación coxofemoral; aportan el empuje propulsor principal en el galope y salto.",
+          "clinical": "Punto anatómico de inyección intramuscular profunda (con aguja dirigida cranealmente); se atrofian marcadamente en displasia de cadera.",
+          "welfare": "La fisioterapia acuática y caminatas en pendientes suaves ayudan a regenerar masa glútea en perros con displasia coxofemoral."
+        },
+        {
+          "id": "hamstrings",
+          "num": 17,
+          "name": "Isquiotibiales (Hamstrings: Bíceps Femoral, Semitendinoso)",
+          "x": 69,
+          "y": 47,
+          "tag": "Muslo &bull; Cara Caudal",
+          "subtitle": "Complejo flexor de rodilla y propulsor de carrera",
+          "location": "Cara caudal del muslo, originándose en la tuberosidad isquiática y descendiendo hacia la tibia y calcáneo.",
+          "function": "Extienden la cadera, flexionan la rodilla y extienden el tarso; generan la máxima potencia propulsora.",
+          "clinical": "Al administrar inyecciones intramusculares caudales se debe evitar el nervio ciático que discurre por debajo de este grupo.",
+          "welfare": "La contractura del músculo gracilis o semitendinoso genera una marcha espasmódica con rotación interna de la rodilla."
+        },
+        {
+          "id": "quadriceps",
+          "num": 18,
+          "name": "Cuádriceps Femoral (Quadriceps femoris)",
+          "x": 63,
+          "y": 50,
+          "tag": "Muslo &bull; Cara Craneal",
+          "subtitle": "El extensor más potente de la rodilla",
+          "location": "Envuelve las caras craneal, lateral y medial del fémur, insertándose en la rótula (patella) y cresta tibial.",
+          "function": "Extiende vigorosamente la articulación de la rodilla; indispensable para pararse, caminar y correr.",
+          "clinical": "Se explora mediante el reflejo rotuliano (nervio femoral); su atrofia severa acompaña a la rotura del ligamento cruzado craneal.",
+          "welfare": "Mantener cuádriceps tonificados previene la inestabilidad de la articulación de la rodilla y la luxación de rótula."
+        },
+        {
+          "id": "gastrocnemius",
+          "num": 19,
+          "name": "Músculo Gastrocnemio (Gastrocnemius)",
+          "x": 68,
+          "y": 72,
+          "tag": "Pierna &bull; Cara Caudal",
+          "subtitle": "Gemelos y tendón común del calcáneo (Aquiles)",
+          "location": "Nace en las tuberosidades supracondíleas del fémur y se inserta en el tubérculo del calcáneo.",
+          "function": "Extiende la articulación del tarso (corvejón) y asiste en la flexión de la rodilla.",
+          "clinical": "La rotura o desinserción del tendón calcáneo común provoca apoyo plantígrado patológico (el corvejón toca el suelo).",
+          "welfare": "Las cirugías reconstructivas del tendón de Aquiles requieren inmovilización temporal estricta para una cicatrización fibrosa óptima."
+        },
+        {
+          "id": "digital_extensors_flexors",
+          "num": 20,
+          "name": "Extensores y Flexores Digitales",
+          "x": 35,
+          "y": 76,
+          "tag": "Antebrazo y Pata &bull; Musculatura Distal",
+          "subtitle": "Control fino del apoyo y movimiento de los dedos",
+          "location": "A lo largo de los huesos radio/ulna y tibia hacia las falanges de los dedos.",
+          "function": "Extienden y flexionan las falanges digitales; absorben el impacto inicial en el aterrizaje de cada paso.",
+          "clinical": "Se evalúan en cortes de tendones por vidrios en la calle y en contracturas digitales congénitas o traumáticas.",
+          "welfare": "Proteger las patas en terrenos rocosos o con hielo y sal industrial evita lesiones tendinosas distales."
+        },
+        {
+          "id": "hindpaw_muscles",
+          "num": 21,
+          "name": "Músculos Intrínsecos de la Pata y Almohadillas",
+          "x": 88,
+          "y": 72,
+          "tag": "Pata &bull; Estructura Podal Detallada",
+          "subtitle": "Almohadillas plantares, interóseos y garras",
+          "location": "En el metatarso y falanges de los dedos posteriores (mostrado en el recuadro inferior derecho).",
+          "function": "Amortiguación hidrostática de impacto, dispersión de carga y estabilidad biomecánica de los dedos.",
+          "clinical": "Las almohadillas no cicatrizan como la piel común; las laceraciones profundas requieren suturas de alivio de tensión especiales.",
+          "welfare": "Examinar almohadillas tras paseos para retirar semillas adheridas o brea que puedan causar abscesos interdigitales."
+        }
+      ]
+    },
+    "esqueleto": {
+      "image": "images/anatomy/perro-esqueleto.jpg",
+      "title": "Perro &bull; Sistema Óseo y Esqueleto",
+      "subtitle": "Osteología canina: esqueleto axial, apendicular y puntos de interés traumatológico",
+      "items": [
+        {
+          "id": "cranium",
+          "num": 1,
+          "name": "Cráneo y Maxilar (Cranium & Maxilla)",
+          "x": 19,
+          "y": 14,
+          "tag": "Esqueleto Axial &bull; Neurocráneo",
+          "subtitle": "Bóveda ósea protectora del encéfalo y órganos de los sentidos",
+          "location": "Parte dorsal y rostral de la cabeza ósea canina.",
+          "function": "Protege el cerebro, aloja los órganos del olfato, ojos y oído interno, y sostiene las piezas dentales superiores.",
+          "clinical": "Variaciones conformacionales notables (dolicocéfalos como Galgos, mesocéfalos como Beagle, braquicéfalos como Bulldog con síndrome obstructivo).",
+          "welfare": "El síndrome braquicéfalo es un problema de conformación ósea que requiere desobstrucción quirúrgica en casos severos."
+        },
+        {
+          "id": "mandible",
+          "num": 2,
+          "name": "Mandíbula (Mandible)",
+          "x": 17,
+          "y": 23,
+          "tag": "Esqueleto Axial &bull; Esqueleto Visceral",
+          "subtitle": "Hueso par móvil articulado en la sínfisis mandibular",
+          "location": "Piso de la cavidad bucal, articulado con el temporal en la ATM.",
+          "function": "Sostiene los dientes inferiores y soporta las enormes fuerzas de masticación.",
+          "clinical": "Sitio frecuente de fracturas en sínfisis por atropellos o caídas; corregibles con cerclajes alámbricos interdentales.",
+          "welfare": "La pérdida ósea mandibular por periodontitis avanzada puede desencadenar fracturas patológicas espontáneas."
+        },
+        {
+          "id": "cervical_vertebrae",
+          "num": 3,
+          "name": "Vértebras Cervicales (C1 - C7)",
+          "x": 29,
+          "y": 24,
+          "tag": "Esqueleto Axial &bull; Columna Cervical",
+          "subtitle": "Soporte móvil del cuello: Atlas (C1) y Axis (C2)",
+          "location": "Entre la base occipital y la primera vértebra torácica.",
+          "function": "Permite movimientos rotacionales y de inclinación de la cabeza; protege la médula espinal cervical.",
+          "clinical": "Subluxación atlantoaxial congénita en razas toy e inestabilidad cervical ('Wobbler') en Doberman y Gran Danés.",
+          "welfare": "El collar ejerce presión directa sobre estas vértebras; priorizar siempre el uso de arneses."
+        },
+        {
+          "id": "scapula",
+          "num": 4,
+          "name": "Escápula / Omóplato (Scapula)",
+          "x": 34,
+          "y": 34,
+          "tag": "Esqueleto Apendicular &bull; Cinturón Escapular",
+          "subtitle": "Hueso plano triangular sin clavícula articular",
+          "location": "Dorsolateral al tórax sobre las primeras 4-5 costillas.",
+          "function": "Transmite la fuerza del miembro anterior al tronco; su falta de clavícula rígida absorbe toneladas de impacto y amplifica la zancada.",
+          "clinical": "Fracturas del cuello y cuerpo escapular; osteocondritis disecante (OCD) en la cavidad glenoidea.",
+          "welfare": "Permitir la libre basculación de la escápula ajustando correctamente las correas de los arneses."
+        },
+        {
+          "id": "humerus",
+          "num": 5,
+          "name": "Húmero (Humerus)",
+          "x": 33,
+          "y": 49,
+          "tag": "Esqueleto Apendicular &bull; Brazo",
+          "subtitle": "Hueso largo de gran resistencia mecánica",
+          "location": "Entre la escápula (hombro) y el radio/ulna (codo).",
+          "function": "Palanca ósea fundamental para el soporte del peso corporal anterior.",
+          "clinical": "Fracturas del cóndilo humeral muy comunes en cachorros de Spaniel; osteosarcoma en metáfisis proximal.",
+          "welfare": "El dolor óseo intenso continuo en este hueso en perros de edad media/avanzada exige descartar neoplasias óseas primarias."
+        },
+        {
+          "id": "radius_ulna",
+          "num": 6,
+          "name": "Radio y Cúbito (Radius and Ulna)",
+          "x": 35,
+          "y": 68,
+          "tag": "Esqueleto Apendicular &bull; Antebrazo",
+          "subtitle": "Pilares de soporte del miembro torácico",
+          "location": "Entre el codo y el carpo; el radio soporta la mayor parte del peso, la ulna forma el olécranon.",
+          "function": "Soporte de carga y estabilidad articular en el trote y carrera.",
+          "clinical": "Displasia de codo (no unión del proceso ancóneo, fragmentación coronoides) y fracturas diafisarias en razas toy (Pinscher, Galgo italiano).",
+          "welfare": "Los cachorros en crecimiento deben evitar saltos desde sillones o camas para prevenir fracturas de cúbito y radio."
+        },
+        {
+          "id": "carpus_metacarpus_phalanges",
+          "num": 7,
+          "name": "Carpo, Metacarpo y Falanges Anteriores",
+          "x": 33,
+          "y": 88,
+          "tag": "Esqueleto Apendicular &bull; Mano Canina",
+          "subtitle": "Estructura ósea del apoyo digitígrado anterior",
+          "location": "Porción distal del miembro anterior; 7 huesos carpianos, 5 metacarpianos y falanges con garras.",
+          "function": "Amortiguación elástica de aterrizaje y soporte articular en la pisada.",
+          "clinical": "Hiperextensión carpiana traumática por rotura del fibrocartílago palmar tras caídas; requiere artrodesis quirúrgica.",
+          "welfare": "El recorte de pelo interdigital previene la formación de bolas de hielo o barro que lesionan las articulaciones de los dedos."
+        },
+        {
+          "id": "thoracic_ribs",
+          "num": 8,
+          "name": "Vértebras Torácicas y Costillas (13 pares)",
+          "x": 44,
+          "y": 40,
+          "tag": "Esqueleto Axial &bull; Caja Torácica",
+          "subtitle": "Escudo óseo cardiopulmonar",
+          "location": "Región dorsal y lateral del tórax (T1 - T13).",
+          "function": "Protección de órganos vitales torácicos y soporte del fuelle respiratorio.",
+          "clinical": "Fracturas costales por mordeduras o atropellos con riesgo de volet costal (tórax batiente) y laceración pulmonar.",
+          "welfare": "La compresión torácica en accidentes debe evaluarse de inmediato con radiografías para descartar neumotórax."
+        },
+        {
+          "id": "sternum",
+          "num": 9,
+          "name": "Esternón (Sternum: Manubrio y Xifoides)",
+          "x": 43,
+          "y": 58,
+          "tag": "Esqueleto Axial &bull; Suelo Torácico",
+          "subtitle": "Serie de 8 esternebras fusionadas ventralmente",
+          "location": "Línea media ventral del tórax.",
+          "function": "Cierre de la jaula torácica ventral e inserción de costillas y músculos pectorales.",
+          "clinical": "Pectus excavatum (deformidad congénita con hundimiento esternal) que reduce la capacidad ventilatoria en cachorros.",
+          "welfare": "En cachorros con pectus excavatum, el tratamiento ortopédico temprano corrige la compresión cardíaca."
+        },
+        {
+          "id": "lumbar_vertebrae",
+          "num": 10,
+          "name": "Vértebras Lumbares (L1 - L7)",
+          "x": 56,
+          "y": 30,
+          "tag": "Esqueleto Axial &bull; Columna Lumbar / Lomo",
+          "subtitle": "Soporte flexible del tronco y cavidad abdominal",
+          "location": "Entre la última vértebra torácica y el sacro.",
+          "function": "Transmite el impulso propulsor de los miembros posteriores hacia adelante; soporte del peso visceral.",
+          "clinical": "Sitio de máxima incidencia de hernia de disco intervertebral (Hansen I y II) con paresia o parálisis en razas condrodistróficas (Teckel/Dachshund).",
+          "welfare": "Evitar que perros con predisposición a hernias discales suban o bajen escaleras repetitivamente; uso de rampas."
+        },
+        {
+          "id": "pelvis",
+          "num": 11,
+          "name": "Pelvis (Ilion, Isquion, Pubis)",
+          "x": 63,
+          "y": 34,
+          "tag": "Esqueleto Apendicular &bull; Cinturón Pelviano",
+          "subtitle": "Cintura pélvica articulada con el sacro",
+          "location": "Extremo caudal del tronco, fusionada en la sínfisis pélvica.",
+          "function": "Aloja el canal del parto, recto y vejiga; aloja el acetábulo para la articulación de la cadera.",
+          "clinical": "Displasia coxofemoral (mala congruencia acetábulo-femoral); fracturas pélvicas por atropellos.",
+          "welfare": "La radiografía oficial de cadera bajo anestesia a partir del año de vida es esencial para el control de la displasia en reproductores."
+        },
+        {
+          "id": "femur",
+          "num": 12,
+          "name": "Fémur (Femur)",
+          "x": 65,
+          "y": 48,
+          "tag": "Esqueleto Apendicular &bull; Muslo",
+          "subtitle": "El hueso más robusto del sistema esquelético",
+          "location": "Entre la cadera (acetábulo) y la rodilla (tibia y patella).",
+          "function": "Palanca motora principal para la propulsión, galope y salto.",
+          "clinical": "Fracturas diafisarias transversales o conminutas; necrosis aséptica de cabeza femoral (Legg-Calvé-Perthes en razas pequeñas).",
+          "welfare": "La osteotomía de cabeza y cuello femoral (FHO) alivia el dolor crónico incapacitante en casos severos."
+        },
+        {
+          "id": "patella",
+          "num": 13,
+          "name": "Rótula / Patella (Patella)",
+          "x": 60,
+          "y": 58,
+          "tag": "Esqueleto &bull; Hueso Sesamoideo",
+          "subtitle": "Inserto dentro del tendón del cuádriceps",
+          "location": "En el surco troclear craneal del fémur distal.",
+          "function": "Desvía el tendón del cuádriceps aumentando la palanca biomecánica de extensión de la rodilla.",
+          "clinical": "Luxación medial de patella (grados I a IV) sumamente prevalente en razas pequeñas (Yorkshire, Poodle, Chihuahua), produciendo marcha a tres patas intermitente.",
+          "welfare": "La corrección quirúrgica (trocleoplastia y transposición de cresta tibial) devuelve la marcha normal y previene artrosis severa."
+        },
+        {
+          "id": "tibia_fibula",
+          "num": 14,
+          "name": "Tibia y Peroné (Tibia and Fibula)",
+          "x": 66,
+          "y": 70,
+          "tag": "Esqueleto Apendicular &bull; Pierna",
+          "subtitle": "Huesos de soporte entre la rodilla y el corvejón",
+          "location": "Entre el fémur y el tarso.",
+          "function": "Transmisión de cargas del muslo al tarso y estabilidad en la pisada.",
+          "clinical": "Área de la meseta tibial donde se produce la rotura del ligamento cruzado craneal; corregida mediante osteotomías TPLO o TTA.",
+          "welfare": "El reposo controlado postquirúrgico con correa es obligatorio tras cirugías ortopédicas de tibia."
+        },
+        {
+          "id": "tarsus_metat
