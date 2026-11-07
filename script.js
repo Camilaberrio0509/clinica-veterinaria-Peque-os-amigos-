@@ -1000,7 +1000,7 @@ const anatomyAtlas = {
       ]
     },
     "esqueleto": {
-      "image": "images/anatomy/gato-esqueleto.jfif",
+      "image": "images/anatomy/gato-esqueleto.jpg",
       "title": "Gato &bull; Sistema Óseo y Esqueleto",
       "subtitle": "Osteología felina: esqueleto axial, apendicular y adaptaciones biomecánicas del salto",
       "items": [
@@ -1242,11 +1242,9 @@ const anatomyAtlas = {
     }
   }
 };
-  }
-};
-
+ 
 let currentAnatomySpecies = 'perro';
-let currentAnatomyLayer = 'cuerpo';
+let currentAnatomyLayer =  'cuerpo';
 let activeAnatomyItemId = null;
 
 function initAnatomyModule() {
