@@ -1439,13 +1439,14 @@ h1, h2, h3, h4, .brand-name, .logo-txt {
 /* ==========================================================================
    ATLAS ANATÓMICO INTERACTIVO: PERROS Y GATOS (360°)
    ========================================================================== */
-.anatomy-master-bar {
+
+  .anatomy-master-bar {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  margin-bottom: 2.25rem;
+  margin-bottom: 2.25 rem;
   background: var(--bg-card);
   padding: 1.25rem 2rem;
   border-radius: var(--radius-lg);
@@ -3231,6 +3232,7 @@ h1, h2, h3, h4, .brand-name, .logo-txt {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
 /* Ajuste definitivo para teléfonos móviles */
 html, body {
   max-width: 100%;
